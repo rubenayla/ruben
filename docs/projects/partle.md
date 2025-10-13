@@ -2,6 +2,8 @@
 
 **May 2025 - Present**
 
+![Partle Homepage](../images/partle/partle-homepage.png)
+
 ## Overview
 
 A community-driven web application designed to solve the frustration of searching for products across multiple local stores. Partle enables users to search for specific items and instantly see availability in nearby stores, saving time and eliminating the need to visit closed or out-of-stock locations.
