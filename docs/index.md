@@ -2,7 +2,7 @@
 
 Hi, I'm **Rubén Jiménez Mejías**, an engineer passionate about robotics, autonomous systems, and innovative technology.
 
-This site showcases my work in autonomous vehicles, personal electric mobility, and robotics systems.
+This site showcases my work in autonomous vehicles, personal electric mobility, robotics systems, and data-driven financial analysis.
 
 ## Featured Projects
 
@@ -21,6 +21,15 @@ Converted a competition kart into a modular autonomous vehicle platform using RO
 Developing an EUC that "never cuts power" - addressing critical safety concerns in commercial products. Features sealed electronics, crash-resistant design, and open-source hardware/firmware for a repairable alternative to proprietary systems.
 
 **Tech:** Embedded Systems, Mechanical Design, Battery Management, Motor Control
+
+---
+
+### [Systematic Investment Analysis Framework](projects/invest.md)
+**Building an AI-powered, systematic approach to stock analysis and valuation**
+
+Created a configuration-driven investment framework that eliminates bias through consistent methodology. Features an LSTM/Transformer neural network with 78.64% accuracy, analyzing 500+ S&P 500 stocks with multiple valuation models (DCF, RIM) and a static HTML dashboard.
+
+**Tech:** Python, Machine Learning (LSTM/Transformer), SQLite, Pandas, Financial Modeling
 
 ---
 

@@ -30,6 +30,7 @@ nav:
   - Projects:
       - Driverless Kart: projects/kart.md
       - Cyberwheel: projects/cyberwheel.md
+      - Investment Analysis: projects/invest.md
       - Other:
           - Emergency Brake System: projects/ebs.md
           - Wheel Sensorization: projects/wheel-sensor.md
