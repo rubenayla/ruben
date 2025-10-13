@@ -43,9 +43,9 @@ Custom electronics module for wheel speed sensing, odometry, and vehicle positio
 
 **Project Documentation:**
 
-- [Design Release Presentation](../files/wheel-sensor-design-release.pptx) - Complete design review and technical specifications
-- [Technical Documentation](../files/wheel-sensor-documentation.docx) - Detailed implementation documentation
-- [Project Approval Presentation](../files/wheel-sensor-project-approval.pptx) - Project proposal and system overview
+- [Design Release Presentation](../../files/wheel-sensor-design-release.pptx) - Complete design review and technical specifications
+- [Technical Documentation](../../files/wheel-sensor-documentation.docx) - Detailed implementation documentation
+- [Project Approval Presentation](../../files/wheel-sensor-project-approval.pptx) - Project proposal and system overview
 
 ## Context
 
