@@ -1,0 +1,9 @@
+[project]
+name = "portfolio"
+version = "0.1.0"
+description = "Personal portfolio site built with MkDocs Material"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "mkdocs-material>=9.5.0",
+]
