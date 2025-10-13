@@ -1,4 +1,7 @@
 site_name: Rubén Jiménez Mejías — Projects
+site_description: Portfolio showcasing robotics, autonomous systems, and innovative technology projects
+site_author: Rubén Jiménez Mejías
+site_url: https://rubenayla.github.io/portfolio/
 
 theme:
   name: material
@@ -27,7 +30,11 @@ nav:
   - Projects:
       - Driverless Kart: projects/kart.md
       - Cyberwheel: projects/cyberwheel.md
-      - Satellites: projects/satellites.md
+      - Other:
+          - Emergency Brake System: projects/ebs.md
+          - Wheel Sensorization: projects/wheel-sensor.md
+          - Steering System: projects/steering.md
+          - Electronics Assembly: projects/electronics.md
   - About: about.md
 
 markdown_extensions:

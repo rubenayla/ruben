@@ -2,33 +2,53 @@
 
 ## Overview
 
-Brief description of the Cyberwheel project.
+An open-source electric unicycle (EUC) project aimed at creating reliable, repairable, and modifiable personal transportation. Cyberwheel challenges current EUC design limitations by prioritizing safety, durability, and community-driven development.
+
+The project's core mission is to design an EUC that "never cuts power, even if you try" - addressing critical safety concerns in existing commercial products through innovative engineering and open-source principles.
 
 ## Key Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- **Sealed Electronics** - Waterproof battery and electronics compartment for all-weather riding
+- **Crash-Resistant Design** - Impact-resistant chassis engineered for real-world durability
+- **Multifunctional Handle** - Serves as kickstand, locking mechanism, and potential seat
+- **Thermal Management** - Chassis designed as a heatsink to prevent overheating
+- **Built-in Charger** - Integrated charging system for convenience
+- **Safety First** - Fireproof battery cover and fail-safe power management
+- **Open Source** - Hardware and firmware designed to be repairable and modifiable by the community
 
 ## Technical Details
 
-### Technologies Used
+### Target Specifications
 
-- Technology 1
-- Technology 2
-- Technology 3
+- **Speed**: ~50 km/h maximum
+- **Rider Capacity**: 80 kg
+- **Wheel Size**: 16" or 18"
+- **Battery**: 20s 84V configuration
+- **Motor**: C38 or C30 high-torque motors
 
-### Architecture
+### Design Philosophy
 
-Description of the system architecture.
+The Cyberwheel addresses critical limitations in current EUC designs:
+- Lack of crash resistance in commercial models
+- Proprietary hardware and software preventing repairs
+- Poor water resistance leading to failures
+- Overheating risks during intensive use
+- Battery safety concerns
+
+### Engineering Approach
+
+- Aluminum chassis serving dual purpose as structural element and heatsink
+- Sealed compartments protecting critical electronics
+- Modular design for ease of maintenance and upgrades
+- Community-driven iterative development
 
 ## Highlights
 
-!!! success "Achievement"
-    Key achievement or milestone
+!!! success "Safety Innovation"
+    Designing an EUC that maintains power stability under all conditions - a critical safety feature that addresses one of the biggest concerns in personal electric vehicles.
 
-!!! info "Technical Challenge"
-    Interesting technical challenge you solved
+!!! info "Open Source Philosophy"
+    Building a community around repairable, modifiable hardware and firmware - challenging the proprietary approach dominating the EUC market.
 
 ## Media
 
@@ -39,6 +59,5 @@ Description of the system architecture.
 
 ## Links
 
-- [GitHub Repository](#)
-- [Demo Video](#)
-- [Paper/Documentation](#)
+- [Full Documentation](https://rubenayla.github.io/cyberwheel/) - Complete project documentation
+- [Project Pitch Video](https://youtu.be/mN5FoosNMC0) - Overview and demonstration

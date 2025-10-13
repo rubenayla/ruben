@@ -2,35 +2,60 @@
 
 ## Background
 
-[Add your background, education, and experience here]
+I'm an **Aerospace Engineering student** in my final year at Universidad Rey Juan Carlos, Madrid, with a passion for inventing and rapidly developing functional prototypes.
+
+Currently serving as **Chief Engineer of the Driverless Section at Ü Motorsport** (2022-2025), where I lead the management and organization of personnel, budgets, timelines, and company relationships. Under my leadership, we've completely overhauled the software and hardware systems, achieving increased reliability and a performance boost of two orders of magnitude.
+
+My experience spans designing both physical products and software-based solutions—from autonomous racing cars and electric steering systems to sophisticated web scrapers and PCB design. I thrive on hands-on development of new technologies and solving complex hardware and software challenges.
+
+### Education
+
+- **Aerospace Engineering in Aerospace Vehicles** - Universidad Rey Juan Carlos, Madrid (2017-2025)
+- **Professional Grade, Piano** - Rodolfo Halffter Conservatory, Madrid (2010-2020)
+
+### Recent Experience
+
+- **Chief Engineer, Driverless Section** - Ü Motorsport (2022-2025)
+- **Corruption Investigation Research** - Universidad Rey Juan Carlos (2024-2025)
+- **Engineer, Autonomous Race Car** - Ü Motorsport (2020-2022)
+- **Aeromodelling Team Member** - COSMOS (2018-2020)
 
 ## Skills
 
 **Programming Languages**
 
-- Python
-- C++
-- [Add more]
+- Python (Multi-threaded processing, Neural Networks, APIs)
+- C/C++ (Embedded systems, PIC18, STM32, PID control)
+- HTML/CSS/JavaScript
+- SQL
 
 **Technologies & Tools**
 
-- ROS (Robot Operating System)
-- Computer Vision
-- Machine Learning
-- [Add more]
+- **Embedded Systems:** STM32, PIC18 microcontrollers, Nvidia Jetson (Xavier, Orin)
+- **PCB Design:** Altium Designer, Eagle
+- **CAD:** SolidWorks, learning CATIA
+- **Robotics:** ROS (Robot Operating System)
+- **Computer Vision & ML:** Neural network APIs, AI classification models
+- **Communications:** CAN, UART, I2C protocols
+- **Composites:** CFRP prepreg lamination
+- **Manufacturing:** Welding, cutting tools, precision hand soldering
 
 **Areas of Expertise**
 
-- Autonomous Systems
-- Robotics
-- [Add more]
+- Autonomous Vehicles & Racing
+- Embedded Systems & Electronics
+- PCB Design & Hardware Development
+- Mechanical Design & Manufacturing
+- System Integration & Optimization
+- Project Management & Team Leadership
 
 ## Contact
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **LinkedIn**: [Your LinkedIn Profile](#)
+- **Email**: [ruben.jimenezmejias@gmail.com](mailto:ruben.jimenezmejias@gmail.com)
+- **LinkedIn**: [linkedin.com/in/rubenayla](https://www.linkedin.com/in/rubenayla/)
 - **GitHub**: [github.com/rubenayla](https://github.com/rubenayla)
 
 ## Resume
 
-[Download CV](path/to/cv.pdf) (coming soon)
+- [Download CV (English)](files/CV_Ruben_Jimenez_EN.pdf)
+- [Descargar CV (Español)](files/CV_Ruben_Jimenez_ES.pdf)
