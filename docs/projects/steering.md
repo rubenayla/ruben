@@ -1,5 +1,7 @@
 # Steering System
 
+**2020 - 2022**
+
 ## Overview
 
 Mechanical and control system for autonomous steering actuation, enabling precise path following and vehicle control in autonomous racing applications.

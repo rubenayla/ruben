@@ -1,5 +1,7 @@
 # Electronics Assembly
 
+**2020 - 2025**
+
 ## Overview
 
 System-level electronics integration and assembly for autonomous vehicle platforms. Focuses on reliable interconnection of sensors, actuators, and computing systems for racing applications.

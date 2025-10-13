@@ -1,5 +1,7 @@
 # Wheel Sensorization Module
 
+**2020 - 2022**
+
 ![Sensor Assembly](../images/wheel-sensor/sensor-assembly.jpg)
 
 ![PCB Design](../images/wheel-sensor/pcb-design.png)

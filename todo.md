@@ -1,24 +1,35 @@
 # TODO
-finish placeholders and commit and push
-fix the mp4 video
-
 
 ## High Priority
 
-### Images & Media
+### Images & Media (User to add)
 - [ ] Add project images for Driverless Kart
+  - Action shots of kart in operation
+  - Team photos
+  - Technical setup/hardware photos
 - [ ] Add project images for Cyberwheel
-- [ ] Add YouTube video for Kart (if available)
+  - Design renders or CAD screenshots
+  - Prototype photos
+  - Assembly process photos
+- [ ] Add images for "Other" projects
+  - Steering system assembly
+  - Electronics integration photos
+  - More PCB photos
+- [ ] Add profile photo to About page
+- [ ] Add YouTube video link for Kart (if available)
 - [ ] Add technical diagrams where helpful
-- [ ] Compress images for performance
+- [ ] Consider adding project thumbnails to homepage
+- [ ] Compress images for performance once added
 
 ### Content
-- [ ] Complete About page with full bio
+- [x] Complete About page with full bio
+- [x] Add dates/timelines to projects
 - [ ] Add specific metrics/results to project pages (speed, performance, etc.)
+  - Kart: lap times, speed, accuracy metrics
+  - Projects: specific technical achievements
 - [ ] Formalize "Challenges & Solutions" sections on project pages
-- [ ] Add profile photo
 - [x] Add CV/resume PDF (place files in docs/files/)
-- [ ] Update CV PDFs with latest version (docs/files/CV_Ruben_Jimenez_EN.pdf and CV_Ruben_Jimenez_ES.pdf)
+- [ ] Update CV PDFs with latest version when needed (docs/files/CV_Ruben_Jimenez_EN.pdf and CV_Ruben_Jimenez_ES.pdf)
 - [x] Update contact information (email, LinkedIn)
 
 ### SEO & Performance
@@ -26,9 +37,10 @@ fix the mp4 video
 - [ ] Add custom page titles in mkdocs.yml
 - [ ] Test site performance and loading times
 - [ ] Add favicon
+- [ ] Add Open Graph meta tags for social media sharing
 
 ## Future Enhancements
-- [ ] Add "Other Projects" section with smaller projects
+- [x] Add "Other Projects" section with smaller projects
 - [ ] Consider adding a blog section
-- [ ] Add project cards/thumbnails to homepage
-- [ ] Consider adding project timeline/dates
+- [ ] Add project status badges (Completed, Ongoing, Prototype)
+- [ ] Add tags/filters for projects by category

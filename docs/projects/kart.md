@@ -1,5 +1,7 @@
 # Driverless Kart
 
+**2020 - 2025**
+
 ## Overview
 
 A modular autonomous kart platform designed for testing and developing self-driving technologies. This project converts a standard competition kart chassis into an autonomous vehicle, creating a practical outdoor testbed for autonomous driving algorithms and research.
