@@ -2,7 +2,7 @@
 
 Hi, I'm **Rubén Jiménez Mejías**, an engineer passionate about robotics, autonomous systems, and innovative technology.
 
-This site showcases my work in autonomous vehicles, personal electric mobility, robotics systems, and data-driven financial analysis.
+This site showcases my work in autonomous vehicles, personal electric mobility, robotics systems, data-driven financial analysis, and full-stack web applications.
 
 ## Featured Projects
 
@@ -30,6 +30,15 @@ Developing an EUC that "never cuts power" - addressing critical safety concerns 
 Created a configuration-driven investment framework that eliminates bias through consistent methodology. Features an LSTM/Transformer neural network with 78.64% accuracy, analyzing 500+ S&P 500 stocks with multiple valuation models (DCF, RIM) and a static HTML dashboard.
 
 **Tech:** Python, Machine Learning (LSTM/Transformer), SQLite, Pandas, Financial Modeling
+
+---
+
+### [Partle - Local Product Discovery](projects/partle.md)
+**Community-driven platform for finding products in local stores**
+
+Full-stack web application solving the frustration of searching multiple stores for specific items. Features passkey authentication, interactive mapping, Elasticsearch-powered search, and community reliability ratings. Helps users find products instantly while supporting local businesses.
+
+**Tech:** React/TypeScript, FastAPI, PostgreSQL, Elasticsearch, Leaflet, Passkeys (FIDO2)
 
 ---
 
