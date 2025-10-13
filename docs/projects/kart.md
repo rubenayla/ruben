@@ -2,6 +2,8 @@
 
 **2020 - 2025**
 
+📚 **[Documentation](https://um-driverless.github.io/kart_docs/)** | 💻 **[GitHub](https://github.com/um-driverless/kart_docs)**
+
 ## Overview
 
 A modular autonomous kart platform designed for testing and developing self-driving technologies. This project converts a standard competition kart chassis into an autonomous vehicle, creating a practical outdoor testbed for autonomous driving algorithms and research.

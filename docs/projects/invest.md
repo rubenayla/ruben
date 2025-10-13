@@ -2,6 +2,8 @@
 
 **April 2025 - Present**
 
+📚 **[Documentation](https://rubenayla.github.io/invest/)** | 💻 **[GitHub](https://github.com/rubenayla/invest)**
+
 ## Overview
 
 A configuration-driven, objective approach to investment analysis that eliminates conversational bias and provides consistent, reproducible results. This framework applies systematic methodology to stock screening and valuation, combining traditional financial models with machine learning predictions.

@@ -1,5 +1,7 @@
 # Cyberwheel
 
+📚 **[Documentation](https://rubenayla.github.io/cyberwheel/)** | 🎥 **[Pitch Video](https://youtu.be/mN5FoosNMC0)**
+
 ## Overview
 
 An open-source electric unicycle (EUC) project aimed at creating reliable, repairable, and modifiable personal transportation. Cyberwheel challenges current EUC design limitations by prioritizing safety, durability, and community-driven development.
