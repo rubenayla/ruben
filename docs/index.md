@@ -15,7 +15,7 @@ Converted a competition kart into a modular autonomous vehicle platform using RO
 
 ---
 
-### [Cyberwheel](projects/cyberwheel.md)
+### [Cyberwheel](https://rubenayla.github.io/cyberwheel/)
 **Designing an open-source electric unicycle that prioritizes safety and repairability**
 
 Developing an EUC that "never cuts power" - addressing critical safety concerns in commercial products. Features sealed electronics, crash-resistant design, and open-source hardware/firmware for a repairable alternative to proprietary systems.
