@@ -10,6 +10,8 @@ A modular autonomous kart platform designed for testing and developing self-driv
 
 The kart maintains manual drive capability while enabling autonomous operation, making it an ideal platform for validating perception, control, and actuation systems in real-world conditions.
 
+🎥 [How Our Autonomous Kart Software Works (Formula Student, 100% Python)](https://youtu.be/wZSFr2eYE4M?si=JckY54OkSBQb4r1M) — Pre-AI walkthrough of the original Python perception, planning, and control stack that powered our first deployments.
+
 ## Key Features
 
 - **Modular Design** - Flexible architecture for testing different autonomous driving components
@@ -48,10 +50,8 @@ Currently migrating from Python-based systems to a more robust ROS implementatio
 
 ## Media
 
-<!-- Add images here -->
-<!-- Example:
-![Kart Image](../images/kart-photo.jpg)
--->
+- 🎥 [How Our Autonomous Kart Software Works (Formula Student, 100% Python)](https://youtu.be/wZSFr2eYE4M?si=JckY54OkSBQb4r1M) — Pre-AI video showing the original Python-based perception, planning, and control software that powered the kart.
+- ![Kart Image](../images/kart-photo.jpg)
 
 ## Links
 
