@@ -46,7 +46,7 @@ Full-stack web application solving the frustration of searching multiple stores 
 
 ---
 
-## Other
+## Other Projects
 
 - **[Emergency Brake System](projects/ebs.md)** - Safety-critical fail-safe brake system with STM32 embedded control
 - **[Wheel Sensorization Module](projects/wheel-sensor.md)** - Custom PCB design for odometry and vehicle positioning
@@ -55,8 +55,6 @@ Full-stack web application solving the frustration of searching multiple stores 
 
 ---
 
----
-
-**Other:** [:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models)
+**Other Profiles:** [:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models)
 
 Learn more [about me](about.md).

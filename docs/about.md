@@ -62,4 +62,4 @@ My experience spans designing both physical products and software-based solution
 
 ---
 
-**Other:** [:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models)
+**Other Profiles:** [:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models)
