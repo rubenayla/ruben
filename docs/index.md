@@ -55,6 +55,6 @@ Full-stack web application solving the frustration of searching multiple stores 
 
 ---
 
-**Other Profiles:** [:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models)
+**Also on:** [:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models)
 
 Learn more [about me](about.md).
