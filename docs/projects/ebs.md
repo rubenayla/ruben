@@ -42,7 +42,7 @@ Safety-critical emergency braking system designed for autonomous racing vehicles
 ## Media
 
 <video width="100%" controls>
-  <source src="../../images/ebs/ebs-demo.mp4" type="video/mp4">
+  <source src="../images/ebs/ebs-demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -50,7 +50,7 @@ Safety-critical emergency braking system designed for autonomous racing vehicles
 
 ## Resources
 
-- [Download Demo Video](../../images/ebs/ebs-demo.mp4)
+- [Download Demo Video](../images/ebs/ebs-demo.mp4)
 
 ## Context
 

@@ -33,7 +33,7 @@ My experience spans designing both physical products and software-based solution
 
 - **Embedded Systems:** STM32, PIC18 microcontrollers, Nvidia Jetson (Xavier, Orin)
 - **PCB Design:** Altium Designer, Eagle
-- **CAD:** SolidWorks, learning CATIA
+- **CAD:** SolidWorks (see [GrabCAD](https://grabcad.com/ruben.jimenez-15/models)), learning CATIA
 - **Robotics:** ROS (Robot Operating System)
 - **Computer Vision & ML:** Neural network APIs, AI classification models
 - **Communications:** CAN, UART, I2C protocols
@@ -49,13 +49,14 @@ My experience spans designing both physical products and software-based solution
 - System Integration & Optimization
 - Project Management & Team Leadership
 
-## Contact
+## Get in Touch
 
-- **Email**: [ruben.jimenezmejias@gmail.com](mailto:ruben.jimenezmejias@gmail.com)
-- **LinkedIn**: [linkedin.com/in/rubenayla](https://www.linkedin.com/in/rubenayla/)
-- **GitHub**: [github.com/rubenayla](https://github.com/rubenayla)
+[:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/rubenayla/){ .md-button }
+[:fontawesome-brands-github: GitHub](https://github.com/rubenayla){ .md-button }
+[:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models){ .md-button }
+[:material-email: Email](mailto:ruben.jimenezmejias@gmail.com){ .md-button }
 
 ## Resume
 
-- [Download CV (English)](files/CV_Ruben_Jimenez_EN.pdf)
-- [Descargar CV (Español)](files/CV_Ruben_Jimenez_ES.pdf)
+- [Download CV (English)](files/CV_Ruben_Jimenez_EN.pdf){ .md-button }
+- [Descargar CV (Español)](files/CV_Ruben_Jimenez_ES.pdf){ .md-button }

@@ -51,7 +51,6 @@ Currently migrating from Python-based systems to a more robust ROS implementatio
 ## Media
 
 - 🎥 [How Our Autonomous Kart Software Works (Formula Student, 100% Python)](https://youtu.be/wZSFr2eYE4M?si=JckY54OkSBQb4r1M) — Pre-AI video showing the original Python-based perception, planning, and control software that powered the kart.
-- ![Kart Image](../images/kart-photo.jpg)
 
 ## Links
 

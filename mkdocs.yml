@@ -29,6 +29,7 @@ nav:
   - Home: index.md
   - Projects:
       - Driverless Kart: projects/kart.md
+      - Cyberwheel: projects/cyberwheel.md
       - Investment Analysis: projects/invest.md
       - Partle: projects/partle.md
       - Other:
@@ -48,3 +49,18 @@ markdown_extensions:
   - pymdownx.details
   - attr_list
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rubenayla
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/rubenayla/
+      name: LinkedIn
+    - icon: fontawesome/solid/cube
+      link: https://grabcad.com/ruben.jimenez-15/models
+      name: GrabCAD

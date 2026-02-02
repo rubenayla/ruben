@@ -2,6 +2,11 @@
 
 Hi, I'm **Rubén Jiménez Mejías**, an engineer passionate about robotics, autonomous systems, and innovative technology.
 
+[:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/rubenayla/){ .md-button }
+[:fontawesome-brands-github: GitHub](https://github.com/rubenayla){ .md-button }
+[:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models){ .md-button }
+[:material-file-pdf-box: Resume](files/CV_Ruben_Jimenez_EN.pdf){ .md-button }
+
 This site showcases my work in autonomous vehicles, personal electric mobility, robotics systems, data-driven financial analysis, and full-stack web applications.
 
 ## Featured Projects
@@ -51,8 +56,6 @@ Full-stack web application solving the frustration of searching multiple stores 
 
 ---
 
-## Get in Touch
-
-📧 [ruben.jimenezmejias@gmail.com](mailto:ruben.jimenezmejias@gmail.com) | 💼 [LinkedIn](https://www.linkedin.com/in/rubenayla/) | 📄 [CV (English)](files/CV_Ruben_Jimenez_EN.pdf)
+---
 
 Learn more [about me](about.md).
