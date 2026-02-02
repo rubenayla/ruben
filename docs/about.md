@@ -53,10 +53,13 @@ My experience spans designing both physical products and software-based solution
 
 [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/rubenayla/){ .md-button }
 [:fontawesome-brands-github: GitHub](https://github.com/rubenayla){ .md-button }
-[:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models){ .md-button }
 [:material-email: Email](mailto:ruben.jimenezmejias@gmail.com){ .md-button }
 
 ## Resume
 
 - [Download CV (English)](files/CV_Ruben_Jimenez_EN.pdf){ .md-button }
 - [Descargar CV (Español)](files/CV_Ruben_Jimenez_ES.pdf){ .md-button }
+
+---
+
+**Other:** [:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models)
