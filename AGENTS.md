@@ -1,32 +1,39 @@
-# Engineering Notes for Agents
+<!-- read in full — kept under 150 lines -->
+# Portfolio — Agent Guide
 
-## Local Development & Preview Protocol
+Personal portfolio site for Rubén Jiménez Mejías. Static site built with MkDocs Material, hosted on GitHub Pages.
 
-To avoid common pitfalls with MkDocs serving and port conflicts, follow this protocol for previewing the portfolio.
+## Quick Reference
+- Live: https://rubenayla.xyz/ (moving from rubenayla.github.io/portfolio/)
+- Repo: https://github.com/rubenayla/portfolio
+- Stack: MkDocs Material (Python), deployed via GitHub Pages
+- Domain: rubenayla.xyz (Cloudflare DNS)
 
-### 1. Reliable Site Serving
-Do **not** use `mkdocs serve` for final verification. It can introduce path prefixes (like `/portfolio/`) based on the `site_url` config, which causes confusion and 404 errors. Instead, build the site and serve the static files directly.
-
-**Command:**
-```bash
-uv run mkdocs build && nohup python3 -m http.server 8005 --directory site > /dev/null 2>&1 &
+## Structure
+```
+docs/
+  index.md          — homepage
+  about.md          — personal bio, links, CV
+  projects/         — one .md per project
+  images/           — project images organized by subfolder
+  files/            — CV PDFs, downloadable files
+mkdocs.yml          — site config, nav, theme
 ```
 
-### 2. Handling Port Conflicts
-If the server fails to start or shows a 404/Connection Refused, port `8005` is likely held by a stale process. Forcefully clear it before starting a new server.
-
-**Cleanup Command:**
+## Local Development
+Do NOT use `mkdocs serve` — it has path prefix issues. Instead:
 ```bash
-lsof -ti:8005 | xargs kill -9
+uv run mkdocs build && python3 -m http.server 8005 --directory site
 ```
+Then visit http://localhost:8005/. Kill stale processes with `lsof -ti:8005 | xargs kill -9`.
 
-### 3. Verification Protocol
-- **Check the Port:** Always verify if something is listening before telling the user to visit the URL.
-- **Verify Content:** Use `curl -I http://127.0.0.1:8000/index.html` to confirm a `200 OK` response.
-- **Pathing:** Serving from the `site/` directory ensures `http://127.0.0.1:8000` maps directly to `index.html`.
+## Agent Files
+- `.agents/tasks.md` — task board (TODO / In Progress / Done)
+- `.agents/notes.md` — project notes, decisions, context
+- `.agents/error-log.md` — mistake log
 
-### Why this matters
-Using the standard `mkdocs serve` often results in "This site can't be reached" or 404 errors because:
-1. It might bind to an address/port that is already partially occupied.
-2. It enforces a URL structure (based on `site_url`) that doesn't match the root localhost address.
-3. It relies on a "live-reload" server that can hang or become unresponsive if the process isn't terminated correctly.
+## Conventions
+- No emojis in content (user preference)
+- Keep descriptions technical and concise
+- Images go in `docs/images/{project-name}/`
+- Downloadable files go in `docs/files/`
