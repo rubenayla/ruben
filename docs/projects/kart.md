@@ -1,6 +1,6 @@
 # Driverless Kart
 
-**2020 – present** · Outdoor autonomous vehicle testbed built on a real competition kart.
+:material-star: **Flagship project** · 2020 – present · Outdoor autonomous vehicle testbed built on a real competition kart.
 
 <video width="100%" controls autoplay muted loop playsinline>
   <source src="../videos/kart-hero.mp4" type="video/mp4">
@@ -9,9 +9,11 @@
 📚 [Documentation](https://um-driverless.github.io/kart_docs/) · 💻 [kart-brain (perception + control)](https://github.com/UM-Driverless/kart_brain) · [kart_docs (mechanical/electrical/process)](https://github.com/um-driverless/kart_docs) · [driverless (legacy Python stack)](https://github.com/UM-Driverless/driverless)
 
 !!! success "Status — May 2026"
-    ROS 2 migration complete. Manual mode operational on real hardware.
-    Autonomous mode actively integrated and tested outdoors against a
-    cone course.
+    ROS 2 migration complete. Manual mode fully operational. **First
+    autonomous run completed 5 full laps on a cone-defined track**
+    (April 2025) before a printed PLA sun gear in the steering reducer
+    snapped on the 6th lap — a known PLA-creep failure with a brass
+    upgrade already designed. Autonomous mode actively integrated.
 
 ## What it is
 

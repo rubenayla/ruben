@@ -1,8 +1,8 @@
 # Rubén Jiménez Mejías
 
-**Robotics engineer — ROS 2, perception, embedded systems, real hardware.**
+**Robotics engineer — end-to-end on real hardware.**
 
-I build outdoor autonomous systems on real vehicles, from the chassis up. Currently finishing my degree and looking for robotics roles in Switzerland.
+I build autonomous systems all the way through the stack: mechanical (CAD, 3D printing, steel welding, carbon fiber composites), electronics (custom PCBs, harness, BMS, power distribution), embedded (ESP32, STM32, FreeRTOS), and high-level software (ROS 2, perception, control on Jetson Orin). I find I do my best work where the layers meet — debugging an autonomy problem usually means crossing two or three of them. Currently finishing my degree and looking for robotics roles in Switzerland.
 
 [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/rubenayla/){ .md-button }
 [:fontawesome-brands-github: GitHub](https://github.com/rubenayla){ .md-button }
@@ -17,9 +17,9 @@ I build outdoor autonomous systems on real vehicles, from the chassis up. Curren
 
 ## Projects
 
-### [Driverless Kart](projects/kart.md) — flagship
+### [Driverless Kart](projects/kart.md) &nbsp; <small>:material-star: **Flagship project**</small>
 
-A real Tony Kart converted into a ROS 2 outdoor autonomous testbed. Jetson AGX Orin + ZED 2 stereo + custom ESP32 safety MCU, in-house steering actuation, custom emergency-brake system, custom wheel sensor PCB. Manual mode operational; autonomous mode tested outdoors against cones.
+A real Tony Kart converted into a ROS 2 outdoor autonomous testbed. Jetson AGX Orin + ZED 2 stereo + custom ESP32 safety MCU, in-house steering actuation, custom emergency-brake system, custom wheel sensor PCB. First completed 5 laps autonomously on a cone-defined track in April 2025; manual mode fully operational, autonomous mode actively integrated.
 
 **Tech:** ROS 2 Humble, YOLOv5, Jetson, Linux/RT, ESP32 / FreeRTOS, custom PCBs, planetary gear design, pneumatics
 
