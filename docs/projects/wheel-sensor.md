@@ -1,5 +1,7 @@
 # Wheel Sensorization Module
 
+*Subsystem of [Driverless Kart](kart.md).*
+
 **2020 - 2022**
 
 ![Sensor Assembly](../images/wheel-sensor/sensor-assembly.jpg)

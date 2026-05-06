@@ -27,16 +27,15 @@ theme:
 
 nav:
   - Home: index.md
-  - Projects:
-      - Driverless Kart: projects/kart.md
-      - Partle: projects/partle.md
-      - Cyberwheel: projects/cyberwheel.md
-      - Investment Analysis: projects/invest.md
-      - Other:
-          - Emergency Brake System: projects/ebs.md
-          - Wheel Sensorization: projects/wheel-sensor.md
-          - Steering System: projects/steering.md
-          - Electronics Assembly: projects/electronics.md
+  - Driverless Kart:
+      - Overview: projects/kart.md
+      - Emergency Brake System: projects/ebs.md
+      - Steering: projects/steering.md
+      - Wheel Sensor: projects/wheel-sensor.md
+      - Electronics: projects/electronics.md
+  - Partle: projects/partle.md
+  - Cyberwheel: projects/cyberwheel.md
+  - Investment Analysis: projects/invest.md
   - About: about.md
 
 markdown_extensions:

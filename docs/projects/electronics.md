@@ -1,6 +1,12 @@
 # Electronics Assembly
 
-**2020 - 2025**
+*Subsystem of [Driverless Kart](kart.md).*
+
+**2020 - present**
+
+![Kart Medulla — custom ESP32-based PCB](../images/kart/kart-medulla-pcb.png)
+
+*"Kart Medulla" — custom ESP32-based PCB acting as the safety boundary between the Linux side (Jetson Orin) and the actuators.*
 
 ## Overview
 

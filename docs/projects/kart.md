@@ -1,58 +1,82 @@
 # Driverless Kart
 
-**2020 - 2025**
+**2020 – present** · Outdoor autonomous vehicle testbed built on a real competition kart.
 
-📚 **[Documentation](https://um-driverless.github.io/kart_docs/)** | 💻 **[GitHub](https://github.com/um-driverless/kart_docs)**
+<video width="100%" controls autoplay muted loop playsinline>
+  <source src="../videos/kart-hero.mp4" type="video/mp4">
+</video>
 
-## Overview
+📚 [Documentation](https://um-driverless.github.io/kart_docs/) · 💻 [kart-brain (perception + control)](https://github.com/UM-Driverless/kart_brain) · [kart_docs (mechanical/electrical/process)](https://github.com/um-driverless/kart_docs) · [driverless (legacy Python stack)](https://github.com/UM-Driverless/driverless)
 
-A modular autonomous kart platform designed for testing and developing self-driving technologies. This project converts a standard competition kart chassis into an autonomous vehicle, creating a practical outdoor testbed for autonomous driving algorithms and research.
+!!! success "Status — May 2026"
+    ROS 2 migration complete. Manual mode operational on real hardware.
+    Autonomous mode actively integrated and tested outdoors against a
+    cone course.
 
-The kart maintains manual drive capability while enabling autonomous operation, making it an ideal platform for validating perception, control, and actuation systems in real-world conditions.
+## What it is
 
-🎥 [How Our Autonomous Kart Software Works (Formula Student, 100% Python)](https://youtu.be/wZSFr2eYE4M?si=JckY54OkSBQb4r1M) — Pre-AI walkthrough of the original Python perception, planning, and control stack that powered our first deployments.
+A modular autonomous platform built on a real Tony Kart chassis, designed as an **outdoor testbed** for perception, planning, and control algorithms. Maintains manual drive capability so a safety driver can take over at any time, which makes it a practical platform for real-world algorithm validation rather than a simulator-bound demo.
 
-## Key Features
+## Hardware
 
-- **Modular Design** - Flexible architecture for testing different autonomous driving components
-- **Outdoor Testing** - Real-world environment for algorithm validation
-- **Dual Mode Operation** - Switchable between manual and autonomous driving
-- **Camera-based Perception** - Cone detection and path planning capabilities
-- **ROS Integration** - Migration to ROS-based architecture for better modularity
+- **Compute** — NVIDIA Jetson AGX Orin (JetPack 6.2.2, CUDA 12.6, 62 GB RAM, Ubuntu 22.04)
+- **Perception sensor** — ZED 2 stereo camera (USB 3.0, GPU-accelerated depth)
+- **Microcontroller** — ESP32 "Kart Medulla" custom PCB, FreeRTOS, UART link to the Orin at 115200 baud
+- **Steering actuation** — DC motor + planetary reducer (in-house design; see [Steering](steering.md))
+- **Emergency brake** — fail-safe pneumatic system on STM32 (see [EBS](ebs.md))
+- **Wheel sensorisation** — custom PCB for hall-effect odometry (see [Wheel Sensor](wheel-sensor.md))
+- **Frame** — 2024 Tony Kart competition chassis
+- **Power** — custom 18650 lithium pack with JBD BMS, spot-welded in-house
 
-## Technical Details
+## Software architecture
 
-### Technologies Used
+Everything from cone perception to steering commands runs in **ROS 2 Humble** on the Orin. The ESP32 is the safety boundary: if the high-level loop dies, the kart fails into a known mechanical-safe state independent of the Linux side.
 
-- **ROS** (Robot Operating System) for system architecture
-- **Computer Vision** for cone detection and environment perception
-- **Autonomous Control Systems** for path planning and vehicle control
-- **Custom Actuation** for steering and braking
-- **Telemetry & Emergency Systems** for safety and monitoring
+- **Perception** — YOLOv5 cone detector + stereo depth localiser. 3D cone positions published to ROS 2 in real time on the Jetson's GPU.
+- **Control** — geometric / pure-pursuit controllers. Each controller publishes its picked target point to `/kart/target`; the dashboard HUD subscribes to the same topic, so what the user sees and what the controller commands cannot disagree.
+- **Pre-ROS legacy stack** — earlier 100% Python pipeline ran at ~50 Hz end-to-end on the same hardware. [Walkthrough video](https://youtu.be/wZSFr2eYE4M?si=JckY54OkSBQb4r1M).
 
-### Architecture
+<video width="100%" controls muted playsinline>
+  <source src="../videos/autonomous-cones.mp4" type="video/mp4">
+</video>
 
-The system follows a modular ROS-based architecture enabling:
-- Autonomous perception and environment mapping
-- Real-time control and actuation
-- Emergency brake systems for safety
-- Telemetry for monitoring and debugging
+*Autonomous mode running outdoors on a cone course.*
 
-Currently migrating from Python-based systems to a more robust ROS implementation.
+## Engineering decisions worth a closer look
 
-## Highlights
+These are the kind of choices that don't appear on a CV bullet point but actually drive whether the system works.
 
-!!! success "Practical Testbed"
-    Created the first outdoor autonomous vehicle testbed for teachers and researchers to validate their algorithms in real-world conditions.
+**Steering sun-gear: nylon → brass.** The planetary reducer's nylon sun gear kept failing at the motor shaft's D-flat — not by tooth shear, but by the bore plastically deforming around the flat under repeated direction reversals (nylon creep on impulsive load). Software mitigations slow the failure but can't prevent it; the root cause is the material/geometry pairing. Decision: machine the sun in brass, keep planets and ring nylon. Wear migrates from the highest-duty part (sun) to the easily-replaced spur planets, and the failure mode shifts from sudden total loss to gradual audible backlash growth — a graceful degradation upgrade.
 
-!!! info "Modular Approach"
-    Components are designed to be adaptable for future single-seater Formula vehicles, following industry safety and engineering standards.
+**Pure-pursuit HUD/wheel mismatch.** Bug report: dashboard arrow pointed right, wheel turned left. The instinct was to chase a sign error in the controller; the architectural fix was different. The HUD and the controller had been computing the target *independently from the same inputs*, so any small divergence (filtering, frame timing) would surface as a confusing mismatch. Refactor: each controller now publishes its picked aim point on `/kart/target`, and the HUD subscribes to that topic. The arrow can no longer disagree with what the controller commanded — the redundancy was the bug.
 
-## Media
+**Dashboard offline access on a moving kart.** Pit shop WiFi drops the moment the kart rolls outdoors, and the team had been opening the dashboard via phone hotspot through the public Cloudflare URL — which silently routed the data through the cell network for a 2-metre link. Decision: use the Orin's LAN URL when on hotspot (phones speak L2 to the Orin, no cellular round-trip), with an ⓘ popover in the dashboard exposing the live LAN IP so nobody has to memorise it. Cloudflare URL stays as a from-anywhere backup. Avoided the alternative (USB AP dongle on the Orin) until field experience justifies the hardware.
 
-- 🎥 [How Our Autonomous Kart Software Works (Formula Student, 100% Python)](https://youtu.be/wZSFr2eYE4M?si=JckY54OkSBQb4r1M) — Pre-AI video showing the original Python-based perception, planning, and control software that powered the kart.
+**Branch protection after a self-merge incident.** A teammate merged their own PR straight into `main`. Root cause was that the GitHub org's *Base permissions* defaulted to Admin, which made every branch-protection rule a polite suggestion. Fix: org base permission dropped to Write, branch-protection set to require 1 review, and the offending commit was preserved on `dev` while reverting `main` rather than force-rewriting history. Process and tooling, not blame.
+
+## Subsystems
+
+- **[Emergency Brake System (EBS)](ebs.md)** — fail-safe pneumatic stop on STM32 with sub-millisecond detection.
+- **[Steering](steering.md)** — actuator, planetary reducer, control integration, and the brass-sun upgrade above.
+- **[Wheel Sensor](wheel-sensor.md)** — custom hall-effect PCB for odometry, schematic-to-assembly in-house.
+- **[Electronics](electronics.md)** — system-level integration: harness, power distribution, sensor and actuator wiring.
+
+## Gallery
+
+<div class="grid cards" markdown>
+
+- ![Full kart](../images/kart/full-kart.jpg){ loading=lazy }
+- ![Chassis arrival](../images/kart/chassis-arrival.jpg){ loading=lazy }
+- ![ZED 2 camera mount](../images/kart/zed2-mount.jpg){ loading=lazy }
+- ![Kart Medulla custom PCB](../images/kart/kart-medulla-pcb.png){ loading=lazy }
+- ![Steering planetary gear motor](../images/kart/steering-planetary.jpg){ loading=lazy }
+- ![Battery pack assembled](../images/kart/battery-pack.jpg){ loading=lazy }
+
+</div>
 
 ## Links
 
-- [Full Documentation](https://um-driverless.github.io/kart_docs/) - Complete technical documentation
-- [GitHub Repository](https://github.com/um-driverless/kart_docs) - Source code and development
+- **[kart-brain](https://github.com/UM-Driverless/kart_brain)** — Jetson-side perception, control, ROS 2 nodes
+- **[kart_docs](https://github.com/um-driverless/kart_docs)** — mechanical, electrical, hydraulics, BOM
+- **[driverless (legacy)](https://github.com/UM-Driverless/driverless)** — pre-ROS Python stack, ~50 Hz reference
+- **[How Our Autonomous Kart Software Works](https://youtu.be/wZSFr2eYE4M?si=JckY54OkSBQb4r1M)** — walkthrough video of the legacy stack

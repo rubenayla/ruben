@@ -1,8 +1,16 @@
 # Emergency Brake System
 
+*Subsystem of [Driverless Kart](kart.md).*
+
 **2020 - 2022**
 
 ![Emergency Brake System Assembly](../images/ebs/ebs-assembly.jpg)
+
+<video width="100%" controls muted playsinline>
+  <source src="../videos/safety-switch.mp4" type="video/mp4">
+</video>
+
+*Safety switch closeup on the kart.*
 
 ## Overview
 

@@ -1,60 +1,54 @@
-# Welcome
+# Rubén Jiménez Mejías
 
-Hi, I'm **Rubén Jiménez Mejías**, an engineer passionate about robotics, autonomous systems, and innovative technology.
+**Robotics engineer — ROS 2, perception, embedded systems, real hardware.**
+
+I build outdoor autonomous systems on real vehicles, from the chassis up. Currently finishing my degree and looking for robotics roles in Switzerland.
 
 [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/rubenayla/){ .md-button }
 [:fontawesome-brands-github: GitHub](https://github.com/rubenayla){ .md-button }
-[:material-file-pdf-box: Resume](files/CV_Ruben_Jimenez_EN.pdf){ .md-button }
-
-This site showcases my work in autonomous vehicles, personal electric mobility, robotics systems, data-driven financial analysis, and full-stack web applications.
-
-## Featured Projects
-
-### [Driverless Kart](projects/kart.md)
-**Building a practical outdoor testbed for autonomous driving algorithms**
-
-Converted a competition kart into a modular autonomous vehicle platform using ROS, computer vision, and custom control systems. Created the first outdoor testbed for researchers to validate self-driving algorithms in real-world conditions.
-
-**Tech:** ROS, Computer Vision, Autonomous Control Systems
+[:material-file-pdf-box: Resume (EN)](files/CV_Ruben_Jimenez_EN.pdf){ .md-button }
+[:material-file-pdf-box: CV (ES)](files/CV_Ruben_Jimenez_ES.pdf){ .md-button }
 
 ---
 
-### [Cyberwheel](https://rubenayla.github.io/cyberwheel/)
-**Designing an open-source electric unicycle that prioritizes safety and repairability**
+<video width="100%" controls autoplay muted loop playsinline>
+  <source src="videos/kart-hero.mp4" type="video/mp4">
+</video>
 
-Developing an EUC that "never cuts power" - addressing critical safety concerns in commercial products. Features sealed electronics, crash-resistant design, and open-source hardware/firmware for a repairable alternative to proprietary systems.
+## Projects
 
-**Tech:** Embedded Systems, Mechanical Design, Battery Management, Motor Control
+### [Driverless Kart](projects/kart.md) — flagship
 
----
+A real Tony Kart converted into a ROS 2 outdoor autonomous testbed. Jetson AGX Orin + ZED 2 stereo + custom ESP32 safety MCU, in-house steering actuation, custom emergency-brake system, custom wheel sensor PCB. Manual mode operational; autonomous mode tested outdoors against cones.
 
-### [Systematic Investment Analysis Framework](projects/invest.md)
-**Building an AI-powered, systematic approach to stock analysis and valuation**
-
-Created a configuration-driven investment framework that eliminates bias through consistent methodology. Features an LSTM/Transformer neural network with 78.64% accuracy, analyzing 500+ S&P 500 stocks with multiple valuation models (DCF, RIM) and a static HTML dashboard.
-
-**Tech:** Python, Machine Learning (LSTM/Transformer), SQLite, Pandas, Financial Modeling
+**Tech:** ROS 2 Humble, YOLOv5, Jetson, Linux/RT, ESP32 / FreeRTOS, custom PCBs, planetary gear design, pneumatics
 
 ---
 
-### [Partle - Local Product Discovery](projects/partle.md)
-**Community-driven platform for finding products in local stores**
+### [Partle](projects/partle.md) — full-stack product discovery
 
-Full-stack web application solving the frustration of searching multiple stores for specific items. Features passkey authentication, interactive mapping, Elasticsearch-powered search, and community reliability ratings. Helps users find products instantly while supporting local businesses.
+Marketplace platform for finding products in local stores. Passkey auth, interactive map, Elasticsearch, community reliability ratings. Live service — solving the "I need this thing today, who has it?" problem.
 
-**Tech:** React/TypeScript, FastAPI, PostgreSQL, Elasticsearch, Leaflet, Passkeys (FIDO2)
+**Tech:** React/TypeScript, FastAPI, PostgreSQL, Elasticsearch, Leaflet, FIDO2 passkeys
 
 ---
 
-## Other Projects
+### [Cyberwheel](https://rubenayla.github.io/cyberwheel/) — open-source EUC
 
-- **[Emergency Brake System](projects/ebs.md)** - Safety-critical fail-safe brake system with STM32 embedded control
-- **[Wheel Sensorization Module](projects/wheel-sensor.md)** - Custom PCB design for odometry and vehicle positioning
-- **[Steering System](projects/steering.md)** - Autonomous steering actuation and control integration
-- **[Electronics Assembly](projects/electronics.md)** - System-level electronics integration for racing vehicles
+Electric unicycle that "never cuts power," addressing critical safety concerns in commercial products. Sealed electronics, crash-resistant, fully open hardware + firmware.
+
+**Tech:** Embedded systems, motor control, BMS, mechanical design
+
+---
+
+### [Investment Analysis](projects/invest.md) — systematic stock valuation
+
+Configuration-driven framework for stock analysis. Multiple valuation models (DCF, RIM) plus an LSTM/Transformer neural network at 78.64% accuracy across 500+ S&P 500 stocks.
+
+**Tech:** Python, PyTorch, SQLite, Pandas, financial modelling
 
 ---
 
 **Also on:** [:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models)
 
-Learn more [about me](about.md).
+[More about me →](about.md)
