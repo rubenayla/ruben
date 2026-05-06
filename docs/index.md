@@ -2,7 +2,11 @@
 
 **Robotics engineer — end-to-end on real hardware.**
 
-I build robots from the chassis up: mechanical (CAD, 3D printing, steel welding, carbon fiber composites), electronics (custom PCBs, harness, BMS, power distribution), embedded firmware (ESP32, STM32, FreeRTOS), and high-level software (ROS 2, perception, control on Linux/Jetson). My current project is an autonomous outdoor kart — same toolkit applies to manipulators, drones, mobile robots, surgical robotics, or any platform where the layers have to actually work together. I find my best work happens where they meet. Currently finishing my degree and looking for robotics roles in Switzerland.
+I build robots from the chassis up — mechanical, electronics, embedded firmware, and high-level software. My current project is an autonomous outdoor kart; same toolkit applies to manipulators, drones, mobile robots, surgical robotics, or any platform where the layers have to actually work together. I find my best work happens where they meet.
+
+*Stack: CAD · 3D printing · steel welding · carbon fiber · custom PCBs · BMS · ESP32 · STM32 · FreeRTOS · ROS 2 · perception · control · Linux/Jetson.*
+
+Currently finishing my degree and looking for robotics roles in Switzerland.
 
 [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/rubenayla/){ .md-button }
 [:fontawesome-brands-github: GitHub](https://github.com/rubenayla){ .md-button }
