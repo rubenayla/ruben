@@ -2,7 +2,7 @@
 
 **Robotics engineer — end-to-end on real hardware.**
 
-I build autonomous systems all the way through the stack: mechanical (CAD, 3D printing, steel welding, carbon fiber composites), electronics (custom PCBs, harness, BMS, power distribution), embedded (ESP32, STM32, FreeRTOS), and high-level software (ROS 2, perception, control on Jetson Orin). I find I do my best work where the layers meet — debugging an autonomy problem usually means crossing two or three of them. Currently finishing my degree and looking for robotics roles in Switzerland.
+I build robots from the chassis up: mechanical (CAD, 3D printing, steel welding, carbon fiber composites), electronics (custom PCBs, harness, BMS, power distribution), embedded firmware (ESP32, STM32, FreeRTOS), and high-level software (ROS 2, perception, control on Linux/Jetson). My current project is an autonomous outdoor kart — same toolkit applies to manipulators, drones, mobile robots, surgical robotics, or any platform where the layers have to actually work together. I find my best work happens where they meet. Currently finishing my degree and looking for robotics roles in Switzerland.
 
 [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/rubenayla/){ .md-button }
 [:fontawesome-brands-github: GitHub](https://github.com/rubenayla){ .md-button }
