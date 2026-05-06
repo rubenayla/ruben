@@ -63,6 +63,10 @@ These are the kind of choices that don't appear on a CV bullet point but actuall
 - **[Wheel Sensor](wheel-sensor.md)** — custom hall-effect PCB for odometry, schematic-to-assembly in-house.
 - **[Electronics](electronics.md)** — system-level integration: harness, power distribution, sensor and actuator wiring.
 
+## Build journey
+
+Weekly posts on LinkedIn document the full build, milestone by milestone — chassis arrival, battery pack assembly, electronics, software, autonomous testing. **[Curated index of posts →](build-journey.md)**
+
 ## Gallery
 
 <div class="grid cards" markdown>
