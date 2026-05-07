@@ -1,65 +1,48 @@
-# About Me
+# About
 
-## Background
+## Who I am
 
-I'm an **Aerospace Engineering student** in my final year at Universidad Rey Juan Carlos, Madrid, with a passion for inventing and rapidly developing functional prototypes.
+Robotics engineer working end-to-end on real hardware — from the chassis up. I find my best work where mechanical, electrical, embedded firmware, and high-level software meet, because that's where systems actually fail or come together. Currently finishing my Aerospace Engineering degree at URJC Madrid (graduating June 2026) and looking for robotics roles in Switzerland.
 
-Currently serving as **Chief Engineer of the Driverless Section at Ü Motorsport** (2022-2025), where I lead the management and organization of personnel, budgets, timelines, and company relationships. Under my leadership, we've completely overhauled the software and hardware systems, achieving increased reliability and a performance boost of two orders of magnitude.
+## Recent work
 
-My experience spans designing both physical products and software-based solutions—from autonomous racing cars and electric steering systems to sophisticated web scrapers and PCB design. I thrive on hands-on development of new technologies and solving complex hardware and software challenges.
+**Chief Engineer, Driverless Section — Ü Motorsport / UM Driverless** *(2022 – present)*
 
-### Education
+Lead engineer on a Formula Student team converting a competition Tony Kart into a fully autonomous outdoor testbed. Migrated the full stack from Python prototype to ROS 2 Humble on Jetson AGX Orin with a custom ESP32 safety MCU. First completed 5 autonomous laps on a cone-defined track in April 2026. Beyond the autonomy stack: designed and machined the steering planetary reducer, built the 18650 battery pack with custom BMS, designed and assembled the "Kart Medulla" custom PCB, and led the team's tooling/docs/branch-protection setup. See **[Driverless Kart](projects/kart.md)** for the full story.
 
-- **Aerospace Engineering in Aerospace Vehicles** - Universidad Rey Juan Carlos, Madrid (2017-2025)
-- **Professional Grade, Piano** - Rodolfo Halffter Conservatory, Madrid (2010-2020)
+**Engineer, Autonomous Race Car — Ü Motorsport** *(2020 – 2022)*
 
-### Recent Experience
+First-generation Python perception, planning, and control stack. ~50 Hz end-to-end loop on the same hardware. Foundation for the ROS 2 rewrite that followed.
 
-- **Chief Engineer, Driverless Section** - Ü Motorsport (2022-2025)
-- **Corruption Investigation Research** - Universidad Rey Juan Carlos (2024-2025)
-- **Engineer, Autonomous Race Car** - Ü Motorsport (2020-2022)
-- **Aeromodelling Team Member** - COSMOS (2018-2020)
+**Other**: corruption-investigation research at URJC (2024 – 2025); aeromodelling team at COSMOS (2018 – 2020); independent product builder ([Partle](projects/partle.md), [Cyberwheel](https://rubenayla.github.io/cyberwheel/), [investment analysis framework](projects/invest.md)).
 
-## Skills
+## Education
 
-**Programming Languages**
+- **Aerospace Engineering — Aerospace Vehicles**, Universidad Rey Juan Carlos, Madrid *(2017 – 2026)*
+- **Professional Grade, Piano**, Rodolfo Halffter Conservatory, Madrid *(2010 – 2020)*
 
-- Python (Multi-threaded processing, Neural Networks, APIs)
-- C/C++ (Embedded systems, PIC18, STM32, PID control)
-- HTML/CSS/JavaScript
-- SQL
+## Stack
 
-**Technologies & Tools**
+**Software** — Python (perception, control, ML, threading), C/C++ (embedded, PID, RTOS), Bash, SQL, JavaScript / HTML / CSS.
 
-- **Embedded Systems:** STM32, PIC18 microcontrollers, Nvidia Jetson (Xavier, Orin)
-- **PCB Design:** Altium Designer, Eagle
-- **CAD:** SolidWorks (see [GrabCAD](https://grabcad.com/ruben.jimenez-15/models)), learning CATIA
-- **Robotics:** ROS (Robot Operating System)
-- **Computer Vision & ML:** Neural network APIs, AI classification models
-- **Communications:** CAN, UART, I2C protocols
-- **Composites:** CFRP prepreg lamination
-- **Manufacturing:** Welding, cutting tools, precision hand soldering
+**Robotics & autonomy** — ROS 2 Humble, Linux real-time, YOLOv5, stereo perception (ZED 2), pure pursuit / geometric controllers, sensor fusion, safety architecture.
 
-**Areas of Expertise**
+**Embedded** — ESP32 (FreeRTOS), STM32, PIC18, Nvidia Jetson (Xavier, Orin). UART / CAN / I2C / SPI.
 
-- Autonomous Vehicles & Racing
-- Embedded Systems & Electronics
-- PCB Design & Hardware Development
-- Mechanical Design & Manufacturing
-- System Integration & Optimization
-- Project Management & Team Leadership
+**Electronics** — schematic + PCB design (Altium, KiCad, Eagle), wiring harness, power distribution, BMS, custom-cell battery packs (18650 + kWeld spot welding).
 
-## Get in Touch
+**Mechanical** — SolidWorks (CAD portfolio on [GrabCAD](https://grabcad.com/ruben.jimenez-15/models)), 3D printing (PLA, nylon, brass machining), welding, CFRP prepreg lamination, basic CNC.
+
+**Workflow** — Git, GitHub Actions, MkDocs, AI-assisted development pipelines.
+
+## Get in touch
 
 [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/rubenayla/){ .md-button }
 [:fontawesome-brands-github: GitHub](https://github.com/rubenayla){ .md-button }
 [:material-email: Email](mailto:ruben.jimenezmejias@gmail.com){ .md-button }
+[:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models){ .md-button }
 
 ## Resume
 
-- [Download CV (English)](files/CV_Ruben_Jimenez_EN.pdf){ .md-button }
-- [Descargar CV (Español)](files/CV_Ruben_Jimenez_ES.pdf){ .md-button }
-
----
-
-**Also on:** [:fontawesome-solid-cube: GrabCAD](https://grabcad.com/ruben.jimenez-15/models)
+[:material-file-pdf-box: CV (English)](files/CV_Ruben_Jimenez_EN.pdf){ .md-button }
+[:material-file-pdf-box: CV (Español)](files/CV_Ruben_Jimenez_ES.pdf){ .md-button }
