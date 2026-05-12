@@ -3,7 +3,7 @@
 :material-star: **Flagship project** · 2020 – present · Outdoor autonomous vehicle testbed built on a real competition kart.
 
 <video width="100%" controls autoplay muted loop playsinline>
-  <source src="../videos/kart-hero.mp4" type="video/mp4">
+  <source src="../../videos/kart-hero.mp4" type="video/mp4">
 </video>
 
 📚 [Documentation](https://um-driverless.github.io/kart_docs/) · 💻 [kart-brain (perception + control)](https://github.com/UM-Driverless/kart_brain) · [kart_docs (mechanical/electrical/process)](https://github.com/um-driverless/kart_docs) · [driverless (legacy Python stack)](https://github.com/UM-Driverless/driverless)
