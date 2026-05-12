@@ -29,11 +29,11 @@ A real Tony Kart converted into a ROS 2 outdoor autonomous testbed. Jetson AGX O
 
 ---
 
-### [Partle](projects/partle.md) — full-stack product discovery
+### [Partle](projects/partle.md) — agent-native marketplace
 
-Marketplace platform for finding products in local stores. Passkey auth, interactive map, Elasticsearch, community reliability ratings. Live service — solving the "I need this thing today, who has it?" problem.
+Marketplace platform built for AI agents as first-class users: a public MCP server lets agents search products, list items for sale, and broker purchases on a user's behalf — a substrate for agent-managed shopping, ads, and listings. Passkey auth, interactive map, Elasticsearch, community reliability ratings. Live service.
 
-**Tech:** React/TypeScript, FastAPI, PostgreSQL, Elasticsearch, Leaflet, FIDO2 passkeys
+**Tech:** React/TypeScript, FastAPI, PostgreSQL, Elasticsearch, Leaflet, FIDO2 passkeys, MCP server
 
 ---
 

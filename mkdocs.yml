@@ -8,6 +8,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.footer
     - content.code.annotate
   palette:
     # Light mode
@@ -29,11 +30,10 @@ nav:
   - Home: index.md
   - Driverless Kart:
       - Overview: projects/kart.md
-      - Emergency Brake System: projects/ebs.md
-      - Steering: projects/steering.md
-      - Wheel Sensor: projects/wheel-sensor.md
-      - Electronics: projects/electronics.md
-      - Build Journey: projects/build-journey.md
+      - Build Journey:
+          - build-journey/index.md
+          - build-journey/posts/2026-04-29-motor.md
+          - build-journey/posts/2026-05-04-inventory-ai-workflow.md
   - Partle: projects/partle.md
   - Cyberwheel: projects/cyberwheel.md
   - Investment Analysis: projects/invest.md

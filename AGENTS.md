@@ -50,3 +50,8 @@ Then visit http://localhost:8005/. Kill stale processes with `lsof -ti:8005 | xa
 - Lives at `docs/build-journey/` using the Material blog plugin (one .md per post under `posts/`).
 - Migration from LinkedIn source folder to portfolio post: copy `post.md` body, strip trailing hashtag + team-tag block, copy referenced media to `docs/images/build-journey/<date>-<slug>/`, add LinkedIn back-link at the bottom.
 - Only migrate posts confirmed in `published.md` — never scheduled-but-unpublished.
+
+## Video assets — validated-only rule
+- For kart Story/Build-Journey embeds and YouTube uploads, source candidate videos from LinkedIn `published.md` (`Media used:` lines with `.mp4`) — never from `ls docs/videos/`. The raw repo MP4s are unvetted (some lack audio, some are weak clips); LinkedIn-published = user-validated.
+- If no published videos exist yet, say so and wait — do not substitute repo MP4s.
+- Exception: `kart-hero.mp4` (silent autoplay loop on the home page) is allowed to stay self-hosted regardless.

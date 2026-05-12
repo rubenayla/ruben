@@ -15,6 +15,9 @@
     snapped on the 6th lap — a known PLA-creep failure with a brass
     upgrade already designed. Autonomous mode actively integrated.
 
+[:material-book-open-variant: **Read the Build Journey**](../build-journey/index.md){ .md-button .md-button--primary }
+[:material-file-document-multiple: Full technical documentation (kart-docs)](https://um-driverless.github.io/kart_docs/){ .md-button }
+
 ## What it is
 
 A modular autonomous platform built on a real Tony Kart chassis, designed as an **outdoor testbed** for perception, planning, and control algorithms. Maintains manual drive capability so a safety driver can take over at any time, which makes it a practical platform for real-world algorithm validation rather than a simulator-bound demo.
@@ -24,9 +27,9 @@ A modular autonomous platform built on a real Tony Kart chassis, designed as an 
 - **Compute** — NVIDIA Jetson AGX Orin (JetPack 6.2.2, CUDA 12.6, 62 GB RAM, Ubuntu 22.04)
 - **Perception sensor** — ZED 2 stereo camera (USB 3.0, GPU-accelerated depth)
 - **Microcontroller** — ESP32 "Kart Medulla" custom PCB, FreeRTOS, UART link to the Orin at 115200 baud
-- **Steering actuation** — DC motor + planetary reducer (in-house design; see [Steering](steering.md))
-- **Emergency brake** — fail-safe pneumatic system on STM32 (see [EBS](ebs.md))
-- **Wheel sensorisation** — custom PCB for hall-effect odometry (see [Wheel Sensor](wheel-sensor.md))
+- **Steering actuation** — DC motor + planetary reducer (in-house design)
+- **Emergency brake** — fail-safe pneumatic system on STM32
+- **Wheel sensorisation** — custom PCB for hall-effect odometry
 - **Frame** — 2024 Tony Kart competition chassis
 - **Power** — custom 18650 lithium pack with JBD BMS, spot-welded in-house
 
@@ -55,17 +58,6 @@ These are the kind of choices that don't appear on a CV bullet point but actuall
 **Dashboard offline access on a moving kart.** Pit shop WiFi drops the moment the kart rolls outdoors, and the team had been opening the dashboard via phone hotspot through the public Cloudflare URL — which silently routed the data through the cell network for a 2-metre link. Decision: use the Orin's LAN URL when on hotspot (phones speak L2 to the Orin, no cellular round-trip), with an ⓘ popover in the dashboard exposing the live LAN IP so nobody has to memorise it. Cloudflare URL stays as a from-anywhere backup. Avoided the alternative (USB AP dongle on the Orin) until field experience justifies the hardware.
 
 **Branch protection after a self-merge incident.** A teammate merged their own PR straight into `main`. Root cause was that the GitHub org's *Base permissions* defaulted to Admin, which made every branch-protection rule a polite suggestion. Fix: org base permission dropped to Write, branch-protection set to require 1 review, and the offending commit was preserved on `dev` while reverting `main` rather than force-rewriting history. Process and tooling, not blame.
-
-## Subsystems
-
-- **[Emergency Brake System (EBS)](ebs.md)** — fail-safe pneumatic stop on STM32 with sub-millisecond detection.
-- **[Steering](steering.md)** — actuator, planetary reducer, control integration, and the brass-sun upgrade above.
-- **[Wheel Sensor](wheel-sensor.md)** — custom hall-effect PCB for odometry, schematic-to-assembly in-house.
-- **[Electronics](electronics.md)** — system-level integration: harness, power distribution, sensor and actuator wiring.
-
-## Build journey
-
-Weekly posts on LinkedIn document the full build, milestone by milestone — chassis arrival, battery pack assembly, electronics, software, autonomous testing. **[Curated index of posts →](build-journey.md)**
 
 ## Gallery
 
