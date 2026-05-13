@@ -47,11 +47,30 @@ Then visit http://localhost:8005/. Kill stale processes with `lsof -ti:8005 | xa
 - **kart LinkedIn campaign source**: `~/Library/CloudStorage/GoogleDrive-ruben.jimenezmejias@gmail.com/My Drive/ruben-files/videos/kart/linkedin/` — canonical source for the weekly LinkedIn posts that feed the portfolio's Build Journey. Each post is a folder under `posts/scheduled/<YYYY-MM-DD>_<slug>/` containing `post.md` (literal LinkedIn body), `rationale.md`, `history.md`, and media files. `published.md` is the durable archive of what's gone live. See that folder's own `AGENTS.md` for the full system.
 
 ## Build Journey
-- Lives at `docs/build-journey/` using the Material blog plugin (one .md per post under `posts/`).
-- Migration from LinkedIn source folder to portfolio post: copy `post.md` body, strip trailing hashtag + team-tag block, copy referenced media to `docs/images/build-journey/<date>-<slug>/`, add LinkedIn back-link at the bottom.
-- Only migrate posts confirmed in `published.md` — never scheduled-but-unpublished.
+- **Single-page scroll**: all posts live in `docs/build-journey/index.md` as sequential `## <title> { #<anchor> }` sections, oldest first. No per-post pages — older split layouts have been removed. Each section has a stable URL via its anchor (e.g. `/build-journey/#motor`).
+- **Per-post anatomy inside the index**:
+  ```markdown
+  ## <Editorial title> { #<anchor-slug> }
+
+  *<YYYY-MM-DD> · [Original on LinkedIn →](<URL from published.md>)*
+
+  <post body — see migration rules below>
+
+  ![alt](../images/build-journey/<YYYY-MM-DD>-<slug>/<file>){ loading=lazy }
+  ```
+- **Adding a newly-published post** (triggered by step 11 of the LinkedIn campaign's `AGENTS.md` at-publish workflow):
+  1. Confirm the post is in the LinkedIn folder's `published.md` (not just `scheduled/`).
+  2. Append a new `## ... { #anchor }` section before the closing `*That's the latest post...*` stanza.
+  3. Update the "Jump to:" line at the top to include the new anchor.
+  4. Copy referenced images/thumbnails into `docs/images/build-journey/<YYYY-MM-DD>-<slug>/`.
+  5. Strip LinkedIn-only cruft from `post.md`: trailing hashtag block, `@Ü Motorsport...` team-tag line, the docs-URL line if it duplicates an inline link.
+  6. Restore `**bold**` / `*italic*` markdown that was flattened for LinkedIn (use `rationale.md` if it documents intended emphasis).
+  7. All images get `{ loading=lazy }` — page weight grows with each post.
+  8. Local build only; do not commit/push until user reviews (status promotions are user-only).
+- **Future page split**: when the page gets unwieldy (~30+ posts, or load-time becomes noticeable), split by year — `index.md` becomes the latest, prior years move to `2026.md`, etc. Anchors per post are stable within each page.
 
 ## Video assets — validated-only rule
 - For kart Story/Build-Journey embeds and YouTube uploads, source candidate videos from LinkedIn `published.md` (`Media used:` lines with `.mp4`) — never from `ls docs/videos/`. The raw repo MP4s are unvetted (some lack audio, some are weak clips); LinkedIn-published = user-validated.
 - If no published videos exist yet, say so and wait — do not substitute repo MP4s.
 - Exception: `kart-hero.mp4` (silent autoplay loop on the home page) is allowed to stay self-hosted regardless.
+- YouTube URLs for kart videos are tracked in `.agents/youtube-urls.md`.
