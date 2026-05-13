@@ -42,7 +42,7 @@ Everything from cone perception to steering commands runs in **ROS 2 Humble** on
 - **Pre-ROS legacy stack** — earlier 100% Python pipeline ran at ~50 Hz end-to-end on the same hardware. [Walkthrough video](https://youtu.be/wZSFr2eYE4M?si=JckY54OkSBQb4r1M).
 
 <video width="100%" controls muted playsinline>
-  <source src="../videos/autonomous-cones.mp4" type="video/mp4">
+  <source src="../../videos/autonomous-cones.mp4" type="video/mp4">
 </video>
 
 *Autonomous mode running outdoors on a cone course.*
