@@ -42,22 +42,10 @@ Everything from cone perception to steering commands runs in **ROS 2 Humble** on
 - **Pre-ROS legacy stack** — earlier 100% Python pipeline ran at ~50 Hz end-to-end on the same hardware. [Walkthrough video](https://youtu.be/wZSFr2eYE4M?si=JckY54OkSBQb4r1M).
 
 <video width="100%" controls muted playsinline>
-  <source src="../../videos/autonomous-cones.mp4" type="video/mp4">
+  <source src="../../videos/2026-04-20_kart_autonomous_no_driver.mp4" type="video/mp4">
 </video>
 
-*Autonomous mode running outdoors on a cone course.*
-
-## Engineering decisions worth a closer look
-
-These are the kind of choices that don't appear on a CV bullet point but actually drive whether the system works.
-
-**Steering sun-gear: nylon → brass.** The planetary reducer's nylon sun gear kept failing at the motor shaft's D-flat — not by tooth shear, but by the bore plastically deforming around the flat under repeated direction reversals (nylon creep on impulsive load). Software mitigations slow the failure but can't prevent it; the root cause is the material/geometry pairing. Decision: machine the sun in brass, keep planets and ring nylon. Wear migrates from the highest-duty part (sun) to the easily-replaced spur planets, and the failure mode shifts from sudden total loss to gradual audible backlash growth — a graceful degradation upgrade.
-
-**Pure-pursuit HUD/wheel mismatch.** Bug report: dashboard arrow pointed right, wheel turned left. The instinct was to chase a sign error in the controller; the architectural fix was different. The HUD and the controller had been computing the target *independently from the same inputs*, so any small divergence (filtering, frame timing) would surface as a confusing mismatch. Refactor: each controller now publishes its picked aim point on `/kart/target`, and the HUD subscribes to that topic. The arrow can no longer disagree with what the controller commanded — the redundancy was the bug.
-
-**Dashboard offline access on a moving kart.** Pit shop WiFi drops the moment the kart rolls outdoors, and the team had been opening the dashboard via phone hotspot through the public Cloudflare URL — which silently routed the data through the cell network for a 2-metre link. Decision: use the Orin's LAN URL when on hotspot (phones speak L2 to the Orin, no cellular round-trip), with an ⓘ popover in the dashboard exposing the live LAN IP so nobody has to memorise it. Cloudflare URL stays as a from-anywhere backup. Avoided the alternative (USB AP dongle on the Orin) until field experience justifies the hardware.
-
-**Branch protection after a self-merge incident.** A teammate merged their own PR straight into `main`. Root cause was that the GitHub org's *Base permissions* defaulted to Admin, which made every branch-protection rule a polite suggestion. Fix: org base permission dropped to Write, branch-protection set to require 1 review, and the offending commit was preserved on `dev` while reverting `main` rather than force-rewriting history. Process and tooling, not blame.
+*Autonomous mode running outdoors — no one in the seat. April 2026.*
 
 ## Gallery
 

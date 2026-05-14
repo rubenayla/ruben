@@ -38,8 +38,6 @@ Everything's going into the [kart docs](https://um-driverless.github.io/kart_doc
 
 For our kart, the first step is to attach the motor. We kept it simple: a 48V 2000W BLDC kit, which included the controller, throttle sensor, and wiring. Our engineering goes into the battery, the safety system, and the autonomy stack.
 
-![Motor mounted to drivetrain with chain](../images/build-journey/2026-04-29-motor/02_motor_with_chain.jpg){ loading=lazy }
-
 Mounting it to a Tony Kart frame was a different job.
 
 The first bracket was PLA, printed on a Bambu Lab. It bolted to the kart's tube frame and held the motor leveled with the rear axle. The bolt holes let us slide the motor to set chain tension. The kart ran on it for months.
@@ -49,6 +47,8 @@ The first bracket was PLA, printed on a Bambu Lab. It bolted to the kart's tube 
 Then it failed in a specific way. The bolt nuts were embedded inside the print, hex pockets buried in the plastic. The nuts were nylon-locking. Tightening the bolts meant fighting the nylon insert's friction, which took enough torque to crack the pocket walls from the inside. The nuts started spinning instead of gripping, the bolts went loose, and we couldn't retighten them because the nuts were buried inside a part we'd have had to destroy to reach them.
 
 Standing in the workshop thinking about the replacement, we asked a better question. Why are we holding the motor horizontally to the sprocket, elevated from the chassis? There's no real reason. We can place the motor on the chassis itself, with a flat welded steel plate. And we can do that ourselves, without waiting for orders.
+
+![Motor mounted to the welded steel plate, with chain](../images/build-journey/2026-04-29-motor/02_motor_with_chain.jpg){ loading=lazy }
 
 We considered fancier options. A grid of shifted holes for positive locking. A tensioner bolt in the style of combustion-engine karts. The slot won because it's the simplest approach, and we could always add a tensioner if the slot ever started moving — but it didn't happen.
 

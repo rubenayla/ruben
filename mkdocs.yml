@@ -3,6 +3,12 @@ site_description: Portfolio showcasing robotics, autonomous systems, and innovat
 site_author: Rubén Jiménez Mejías
 site_url: https://rubenayla.xyz/
 
+# Video sidecar .md files live next to their MP4 in docs/videos/; they're
+# metadata for agents (rating, source, status), not rendered pages.
+exclude_docs: |
+  videos/*.md
+
+
 theme:
   name: material
   features:
