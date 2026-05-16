@@ -22,7 +22,7 @@
 - [ ] Add Open Graph meta tags for social sharing
 - [ ] Add favicon
 - [ ] Optimize meta descriptions per page
-- [ ] Create profiles on high-DR sites linking back (see partle/.agents/drafts/profile-bios.md)
+- [ ] Create profiles on high-DR sites linking back (see partle/.agents/posts/profile-bios.md)
 
 ### Future
 - [ ] Consider blog section

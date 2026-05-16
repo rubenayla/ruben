@@ -43,8 +43,8 @@ Then visit http://localhost:8005/. Kill stale processes with `lsof -ti:8005 | xa
 - **Raw HTML `<video src>` / `<iframe src>` relative paths are NOT rewritten by mkdocs** like markdown links are. A page at `/projects/kart/` (directory URL) referencing `../videos/X.mp4` resolves to `/projects/videos/X.mp4` (404). Use `../../videos/X.mp4` to reach `/videos/X.mp4`. Markdown image/link syntax does get rewritten — only raw HTML tags hit this.
 
 ## Related repos / sources
-- **kart-docs (team repo)**: `/Users/rubenayla/repos/kart-docs` — MkDocs Material, public team technical reference. Same framework as this portfolio. URL: https://um-driverless.github.io/kart_docs/
-- **kart LinkedIn campaign source**: `~/ruben-files/videos/kart/linkedin/` (Drive-synced) — canonical source for the weekly LinkedIn posts that feed the portfolio's Build Journey. Each post is a folder under `posts/scheduled/<YYYY-MM-DD>_<slug>/` containing `post.md` (literal LinkedIn body), `rationale.md`, `history.md`, and media files. `published.md` is the durable archive of what's gone live. See that folder's own `AGENTS.md` for the full system.
+- **kart-docs (team repo)**: `/Users/rubenayla/repos/kart-docs` — MkDocs Material, public team technical reference. Same framework as this portfolio. URL: https://um-driverless.github.io/kart-docs/
+- **kart LinkedIn campaign source**: `~/ruben-files/videos/kart/linkedin/` (Drive-synced) — canonical source for the weekly LinkedIn posts that feed the portfolio's Build Journey. Each post is a folder under `posts/<YYYY-MM-DD>_<slug>/` containing `post.md` (literal LinkedIn body), `README.md`, `history.md`, and media files. `published.md` is the durable archive of what's gone live. See that folder's own `AGENTS.md` for the full system.
 - **kart raw-media pool**: `~/ruben-files/videos/kart/01_main/` — every photo and video the kart project has ever curated lives here with `YYYY-MM-DD_what_it_is.ext` filenames. Canonical metadata is `01_main/INDEX.md` (Reserved / Used / Tagged tables — chosen deliberately over per-file sidecars, see that folder's history). **Always search this pool before asking the user to re-export anything from Google Photos / cloud / phone.** The portfolio's `docs/videos/` is the deployment surface; `01_main/` is upstream. Recipe for matching a clip the user references by Photos screenshot: `ffprobe` duration + resolution against the pool, then `open` the 1–2 likeliest candidates for visual confirmation — never declare a match on metadata alone (`sec7` had the right dimensions and wrong content; see `.agents/error-log.md`).
 
 ## Build Journey
@@ -60,12 +60,12 @@ Then visit http://localhost:8005/. Kill stale processes with `lsof -ti:8005 | xa
   ![alt](../images/build-journey/<YYYY-MM-DD>-<slug>/<file>){ loading=lazy }
   ```
 - **Adding a newly-published post** (triggered by step 11 of the LinkedIn campaign's `AGENTS.md` at-publish workflow):
-  1. Confirm the post is in the LinkedIn folder's `published.md` (not just `scheduled/`).
+  1. Confirm the post is in the LinkedIn folder's `published.md` (not just `posts/`).
   2. Append a new `## ... { #anchor }` section before the closing `*That's the latest post...*` stanza.
   3. Update the "Jump to:" line at the top to include the new anchor.
   4. Copy referenced images/thumbnails into `docs/images/build-journey/<YYYY-MM-DD>-<slug>/`.
   5. Strip LinkedIn-only cruft from `post.md`: trailing hashtag block, `@Ü Motorsport...` team-tag line, the docs-URL line if it duplicates an inline link.
-  6. Restore `**bold**` / `*italic*` markdown that was flattened for LinkedIn (use `rationale.md` if it documents intended emphasis).
+  6. Restore `**bold**` / `*italic*` markdown that was flattened for LinkedIn (use `README.md` if it documents intended emphasis).
   7. All images get `{ loading=lazy }` — page weight grows with each post.
   8. Local build only; do not commit/push until user reviews (status promotions are user-only).
 - **Future page split**: when the page gets unwieldy (~30+ posts, or load-time becomes noticeable), split by year — `index.md` becomes the latest, prior years move to `2026.md`, etc. Anchors per post are stable within each page.

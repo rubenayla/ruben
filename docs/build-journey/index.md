@@ -28,7 +28,7 @@ Three stages:
 
 Coming up: motor → battery → braking → steering → compute → testing.
 
-Everything's going into the [kart docs](https://um-driverless.github.io/kart_docs/) so anyone can build it themselves.
+Everything's going into the [kart docs](https://um-driverless.github.io/kart-docs/) so anyone can build it themselves.
 
 ---
 
@@ -58,7 +58,7 @@ The kit also shipped with a chain in a different pitch than the kart's: T8F (8 m
 
 ![Drivetrain at the rear wheel](../images/build-journey/2026-04-29-motor/04_drivetrain_rear_wheel.jpg){ loading=lazy }
 
-Months later, the question "wait, which pitch did we use?" kept coming up. That's why everything goes into the [kart docs](https://github.com/UM-Driverless/kart_docs).
+Months later, the question "wait, which pitch did we use?" kept coming up. That's why everything goes into the [kart docs](https://github.com/UM-Driverless/kart-docs).
 
 ---
 

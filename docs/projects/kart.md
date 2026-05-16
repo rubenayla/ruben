@@ -6,7 +6,7 @@
   <source src="../../videos/kart-hero.mp4" type="video/mp4">
 </video>
 
-📚 [Documentation](https://um-driverless.github.io/kart_docs/) · 💻 [kart-brain (perception + control)](https://github.com/UM-Driverless/kart_brain) · [kart_docs (mechanical/electrical/process)](https://github.com/um-driverless/kart_docs) · [driverless (legacy Python stack)](https://github.com/UM-Driverless/driverless)
+📚 [Documentation](https://um-driverless.github.io/kart-docs/) · 💻 [kart-brain (perception + control)](https://github.com/UM-Driverless/kart-brain) · [kart-docs (mechanical/electrical/process)](https://github.com/um-driverless/kart-docs) · [driverless (legacy Python stack)](https://github.com/UM-Driverless/driverless)
 
 !!! success "Status — May 2026"
     ROS 2 migration complete. Manual mode fully operational. **First
@@ -16,7 +16,7 @@
     upgrade already designed. Autonomous mode actively integrated.
 
 [:material-book-open-variant: **Read the Build Journey**](../build-journey/index.md){ .md-button .md-button--primary }
-[:material-file-document-multiple: Full technical documentation (kart-docs)](https://um-driverless.github.io/kart_docs/){ .md-button }
+[:material-file-document-multiple: Full technical documentation (kart-docs)](https://um-driverless.github.io/kart-docs/){ .md-button }
 
 ## What it is
 
@@ -62,7 +62,7 @@ Everything from cone perception to steering commands runs in **ROS 2 Humble** on
 
 ## Links
 
-- **[kart-brain](https://github.com/UM-Driverless/kart_brain)** — Jetson-side perception, control, ROS 2 nodes
-- **[kart_docs](https://github.com/um-driverless/kart_docs)** — mechanical, electrical, hydraulics, BOM
+- **[kart-brain](https://github.com/UM-Driverless/kart-brain)** — Jetson-side perception, control, ROS 2 nodes
+- **[kart-docs](https://github.com/um-driverless/kart-docs)** — mechanical, electrical, hydraulics, BOM
 - **[driverless (legacy)](https://github.com/UM-Driverless/driverless)** — pre-ROS Python stack, ~50 Hz reference
 - **[How Our Autonomous Kart Software Works](https://youtu.be/wZSFr2eYE4M?si=JckY54OkSBQb4r1M)** — walkthrough video of the legacy stack
