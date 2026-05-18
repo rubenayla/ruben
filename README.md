@@ -2,68 +2,74 @@
 
 **Live site: <https://rubenayla.xyz/>**
 
-Personal portfolio site built with MkDocs Material showcasing my projects and work.
+Personal site built with MkDocs Material. Serves three things:
+
+1. **Homepage (`docs/index.md`)** — CV-style landing: who I am, what I work on, and direct links to LinkedIn, GitHub, and the resume PDFs (EN + ES). This is what someone lands on from a job application or LinkedIn click — it should answer "who is this person, and where do I find their CV?" in one screen.
+2. **Project tabs** — one tab per substantial project (driverless kart, Partle, Cyberwheel, investment analysis, …). Each is a self-contained write-up under `docs/projects/` or its own folder (e.g. `docs/build-journey/`).
+3. **Thoughts tab** — essays and structured arguments on topics I care about (healthcare, etc.). Lives under `docs/thoughts/`. Same status as a project tab: a section of the site, not a sub-page of something else.
+
+Top-level nav tabs are defined in `mkdocs.yml` under `nav:`.
 
 ## Local Development
 
-1. Clone the repository:
 ```bash
 git clone https://github.com/rubenayla/portfolio.git
 cd portfolio
-```
-
-2. Install dependencies (uv will automatically create a virtual environment):
-```bash
 uv sync
-```
-
-3. Run local server:
-```bash
 uv run mkdocs serve
 ```
 
-Visit `http://127.0.0.1:8000` to view the site.
+Visit `http://127.0.0.1:8000`.
 
 ## Deployment
 
-The site is automatically deployed to GitHub Pages via GitHub Actions on every push to `main`.
+Auto-deploys to GitHub Pages via GitHub Actions on push to `main`. The custom domain (`rubenayla.xyz`) is wired through `docs/CNAME`.
 
 ### Setup GitHub Pages
 
-1. Go to your repository Settings > Pages
-2. Under "Build and deployment", select "GitHub Actions" as the source
-3. Push to main branch to trigger deployment
+1. Repository Settings → Pages
+2. Build and deployment source: "GitHub Actions"
+3. Push to `main` to trigger
 
 ## Structure
 
 ```
 portfolio/
 ├─ docs/
-│  ├─ index.md               # Homepage
-│  ├─ projects/              # Project pages
-│  │  ├─ kart.md
-│  │  ├─ cyberwheel.md
-│  │  └─ satellites.md
-│  └─ about.md               # About page
-├─ mkdocs.yml                # MkDocs configuration
-├─ pyproject.toml            # Project dependencies
-└─ .github/workflows/        # GitHub Actions
+│  ├─ index.md               # CV-style homepage (LinkedIn, GitHub, CV PDFs, project grid)
+│  ├─ about.md               # Longer-form about page
+│  ├─ files/                 # CV PDFs and other downloadable files
+│  ├─ images/                # Site images
+│  ├─ videos/                # Project videos (hero clips, demos)
+│  ├─ projects/              # One markdown file per project tab
+│  ├─ build-journey/         # Multi-page project write-up (driverless kart)
+│  └─ thoughts/              # Essays / structured arguments (healthcare, …)
+├─ mkdocs.yml                # Site config + nav (tabs)
+├─ pyproject.toml
+└─ .github/workflows/        # GitHub Actions deploy
 ```
 
 ## Adding Content
 
+### A new project tab
+
+1. Create `docs/projects/<name>.md`
+2. Add it under `nav:` in `mkdocs.yml`
+3. Optionally feature it on the homepage (`docs/index.md`)
+
+### A new thought / essay
+
+1. Create `docs/thoughts/<topic>.md` (or a folder if it's multi-page)
+2. Add it under the `Thoughts:` section in `nav:` in `mkdocs.yml`
+
 ### Images
 
-Place images in `docs/images/` and reference them in markdown:
+Place in `docs/images/` and reference relatively:
+
 ```markdown
 ![Alt text](../images/your-image.jpg)
 ```
 
-### New Projects
-
-1. Create a new markdown file in `docs/projects/`
-2. Add it to the `nav` section in `mkdocs.yml`
-
 ## License
 
-This project is open source and available under the MIT License.
+MIT.
