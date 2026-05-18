@@ -1,25 +1,26 @@
 # Standards - Default stuff for compatibility
 These are my preferred standards. I wish some were universal (they're just better), but others are my personal preferences.
 
-
+## Units
 - Reference: Neufert
 - 7 fundamental units: m, kg, s, K, A, mol, cd.
 - Billion = 10^9. Trillion (=Tera) = 10^12.
 - Also ºC, Nit (cd/m2), lm, and lx (lm/m^2, illumination of surface instead of an angle).
 - For engineering: mmgs or mks unit system, and Std number format for simple numbers, but Engineering format with 4 significant figures for >1000 and <0.01.
-- Air coupler (sorted by priority):
-    1. **`EU` - Euro High-Flow Interchange, PCL XF**, 1/4" flow, 10x7mm tip, 11.8mm protuberance, 21mm total depth (often 1/4" BSP thread profile)
-    2. Industrial, red, Milton M-style, Type D, 1/4" flow, 8mm OD tip, 10.85mm protuberance, 24mm total depth
-    3. Milton V-style high flow, S-765
 
-Switches:
+## Pneumatics
+Air coupler (sorted by priority):
+1. **`EU` - Euro High-Flow Interchange, PCL XF**, 1/4" flow, 10x7mm tip, 11.8mm protuberance, 21mm total depth (often 1/4" BSP thread profile)
+2. Industrial, red, Milton M-style, Type D, 1/4" flow, 8mm OD tip, 10.85mm protuberance, 24mm total depth
+3. Milton V-style high flow, S-765
+
+## Switches and valves
 - Along pipe = ALLOW FLOW, crossing pipe = BLOCK FLOW
 - Vertical, UP = ON (high energy, active, not the default), Horizontal, DOWN = OFF (the default, gravity)
 - / = Going down or inside, \ = going up or outside. For example in a folder tree or a date.
 - Nomenclature for valves and relays that is not contradictory between fluids and electricity (closed valve blocks fluid, closed switch lets current):
     - Let flow: "let" (closed switch, opened valve)
     - Cut flow: "cut" (opened switch, closed valve)
-
 
 ## Dates
 > Note: avoid ``:`` in filenames so this works on Windows/macOS/Linux. Prefer readable + easy to write + easy to parse.
@@ -75,9 +76,9 @@ Soldering Iron Tips: T12 style (heater built into the tip)
 - 0V, GND, reference: Black
 - +3.3V: Brown
 - +5V: Red
-- Interlock: Pink? yellow? brown?
-- +12V: Yellow?
-- +48V: Blue or red with blue stripe?
+<!-- - Interlock: Pink? yellow? brown? -->
+<!-- - +12V: Yellow? -->
+<!-- - +48V: Blue or red with blue stripe? -->
 - ++V: Bright orange
 - Signals: Green
 - Cold colors for signal and negative voltages.
@@ -107,8 +108,8 @@ Soldering Iron Tips: T12 style (heater built into the tip)
 - GX connectors (Many pins with 5A/240V max)
 - Faston
 - Speakon
-- MC4 for solar panels?
-- EC8? (190A cont 400A peak) - Electric motor and batteries
+<!-- - MC4 for solar panels? -->
+<!-- - EC8? (190A cont 400A peak) - Electric motor and batteries -->
 - Automotive
     - **AMPSEAL** https://www.youtube.com/watch?v=uXTkm_XV2OY
         - Very easy to put and remove pins from connector
@@ -130,7 +131,7 @@ Soldering Iron Tips: T12 style (heater built into the tip)
     - Deutsch Circular Connectors (HD30)
     - Deutsch DT S (Circular, Aircraft)
     - Delphi / Aptiv
-    - Delphi Weatherpack, (GM, Metri-Pack)?
+    <!-- - Delphi Weatherpack, (GM, Metri-Pack)? -->
     - Molex MX150
     - Tessa tape to protect.
 - Anderson (SB50): Weatherproof High current (and V) genderless connector
@@ -149,9 +150,9 @@ Soldering Iron Tips: T12 style (heater built into the tip)
         - Mouser, 8 pin (inner positive lock)
             - https://www.mouser.es/ProductDetail/Molex/203559-0807?qs=sGAEpiMZZMvlX3nhDDO4AE1Z0mSz9XmYnUs1fGTpPiM%3D
             - https://www.molex.com/en-us/products/part-detail/2035590807
-    - JST-SH? (1mm pitch 28gauge)
+    <!-- - JST-SH? (1mm pitch 28gauge) -->
     - MOLEX PicoBlade (1.25mm pitch. cameras. friction lock)
-    - Molex SL (2.54mm pitch)?
+    <!-- - Molex SL (2.54mm pitch)? -->
     - JST-SM 2.5 mm (click in, very secure with tabs), Dupont or CRHO (2.54mm or 0.1" pitch)
     - M12 circular waterproof connectors
         - From Phoenix Contact, TE...
@@ -188,7 +189,7 @@ Soldering Iron Tips: T12 style (heater built into the tip)
 - Weatherproof
 </details>
 
-- ?For single-pin connector with exposed male (e.g. arduino, dupont), the male goes at the pcb, fixed part, and the female goes at the cable, since it's what easily moves and can cause shorts.
+<!-- - ?For single-pin connector with exposed male (e.g. arduino, dupont), the male goes at the pcb, fixed part, and the female goes at the cable, since it's what easily moves and can cause shorts. -->
 
 ### IC packages
 **Nomenclature**: Package name + Pitch + 'P' + Lead Span X Height – Pin Qty.
@@ -263,7 +264,7 @@ Since decimal base is common, add 5mm, 10mm, 50mm, 100mm, etc.
 - Fonts
     - Fast to read: Inter, PTSans, Open Sans, Atkinson Hyperlegible
     - Monospace: JetBrains Mono, Roboto Slab, consolas
-        - menlo?
+        <!-- - menlo? -->
 - USA QWERTY keyboard. Dvorak is cool, maybe qgmlwb, but the difference is not so big and it's easier to write gliding with qwerty, and the shortcuts of most applications are thought with a QWERTY layout in mind. I would prefer some expanded version with common greek letters (AltGr + A = Alpha, AltGr + B = Beta ...), and just remove the number row and use a numpad.
 
 Scientific paper format: APA rules.
@@ -317,9 +318,6 @@ I would like highlighter symbol different than grouping symbol
 | ``Ctrl Alt ¡``, ``Ctrl Alt '``               | Toggle copilot suggestions ↔                               |
 
 
-Alt + / Auto-complete
-- Composite shortcuts?
-    - 
 
 ### Debugger
 | Shortcut           | Function                              |
@@ -363,7 +361,7 @@ Alt + / Auto-complete
     - Diverging
         - RdBu (red-blue): Very natural, white in the middle. Can assign 0 to white and the extremes to the colors.
         - Coolwarm has a strange gray by default and too saturated colors, looks odd compared to the others. However, it could be useful to distinguish missing data.
-        - Spectral?
+        <!-- - Spectral? -->
     - Qualitative
         - Tab10: They look good together and have good contrast with white background and with each other.
         - Tableau
@@ -392,7 +390,7 @@ void set_gear(f64 engine_rpm){
 - Use type hints
 - Each test function should be independent, and parameters should be used when possible, to avoid rewriting the same test
 
-## CAD File Formats:
+## CAD File Formats
 - STEP (or old IGES, .igs)(STandard for Exchange Product data): Has color, material properties, and tolerances  well defined curves. Cannot be 3d printed. ISO 10303. AP203 is general, AP214 has colors, layers, dimensioning, tolerance, design intent, AP242 adds product and manufacturing information.
 - OBJ: Geometry definition. Mesh with vertices, normals, and color, UV, when paired to an MTL file (Material Template Library). Free-form curves and surfaces to not lose information.
 - STL (Standard Triangle Format): Very simple. Lossy. For 3d printing.
@@ -458,14 +456,6 @@ A button can communicate two things: what **is** (state) or what **will happen**
 - [Gridfinity](https://gridfinity.xyz/specification/)
     - magnet polarity: North-down, so the magnet would match the Earth's magnetic field at the North Pole.
     - Height: = to the grid size, so 42mm = 6*7mm or 6U (6 units of 7mm, including the base)
-- deleteme provisional PS5 controller mapping for airplanes:
-    - L3 horizontal: ch0: yaw
-    - L3 vertical: ch1: power
-    - R3 horizontal: ch2: roll
-    - R3 vertical: ch3: pitch
-    - L1: Trim up
-    - R1: Trim down
-    - L2 and R2: Brakes
 - Ways to talk about moments of inertia:
     1. First, second, third... depending on the order of the distance that gets integrated. So $\int r \dm$ is the first moment, $\int r^2 \dm$ is the second moment.
     2. Then say of mass or of area, depending on the other part of the integral.
@@ -501,7 +491,7 @@ A button can communicate two things: what **is** (state) or what **will happen**
     - length or extent = size of each dimension (or the common value if all equal)
     - size = total number of elements (product of axis lengths)
 
-# Anti-Standards, do not use
+## Anti-Standards, do not use
 - G3/8", NPT. Just use G1/2"
 - Displayport (HDMI is the standard, just go to USB-C. The adapters to DP are super expensive). Just use USB-C
 - Micro-USB, Mini-USB. Just use USB-C
