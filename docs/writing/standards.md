@@ -1,5 +1,10 @@
-# Standards - Default stuff for compatibility
-These are my preferred standards. I wish some were universal (they're just better), but others are my personal preferences.
+# Standards
+
+When I'm designing something, I sometimes doubt what size, distance, colour, or component to use. I keep these standards noted down so I don't have to re-decide each time. Defaults that play well with each other, so everything stays compatible across projects.
+
+There's also an anti-standards section at the bottom: things that just don't make sense anymore. Noted so I remember not to use them, or at least try to move away from them where I can.
+
+Some of these I wish were universal (they're just better). Others are personal preference.
 
 ## Units
 - Reference: Neufert
