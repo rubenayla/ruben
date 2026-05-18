@@ -6,7 +6,7 @@ Personal site built with MkDocs Material. Serves three things:
 
 1. **Homepage (`docs/index.md`)** — CV-style landing: who I am, what I work on, and direct links to LinkedIn, GitHub, and the resume PDFs (EN + ES). This is what someone lands on from a job application or LinkedIn click — it should answer "who is this person, and where do I find their CV?" in one screen.
 2. **Project tabs** — one tab per substantial project (driverless kart, Partle, Cyberwheel, investment analysis, …). Each is a self-contained write-up under `docs/projects/` or its own folder (e.g. `docs/build-journey/`).
-3. **Thoughts tab** — essays and structured arguments on topics I care about (healthcare, etc.). Lives under `docs/thoughts/`. Same status as a project tab: a section of the site, not a sub-page of something else.
+3. **Writing tab** — essays and (eventually) standards / opinionated conventions. Lives under `docs/writing/`. Same status as a project tab: a section of the site, not a sub-page of something else. Subdivides into `essays/` and `standards/` as it grows.
 
 Top-level nav tabs are defined in `mkdocs.yml` under `nav:`.
 
@@ -43,7 +43,7 @@ portfolio/
 │  ├─ videos/                # Project videos (hero clips, demos)
 │  ├─ projects/              # One markdown file per project tab
 │  ├─ build-journey/         # Multi-page project write-up (driverless kart)
-│  └─ thoughts/              # Essays / structured arguments (healthcare, …)
+│  └─ writing/               # Essays + standards (healthcare, …)
 ├─ mkdocs.yml                # Site config + nav (tabs)
 ├─ pyproject.toml
 └─ .github/workflows/        # GitHub Actions deploy
@@ -57,10 +57,10 @@ portfolio/
 2. Add it under `nav:` in `mkdocs.yml`
 3. Optionally feature it on the homepage (`docs/index.md`)
 
-### A new thought / essay
+### A new essay or standard
 
-1. Create `docs/thoughts/<topic>.md` (or a folder if it's multi-page)
-2. Add it under the `Thoughts:` section in `nav:` in `mkdocs.yml`
+1. Create `docs/writing/<topic>.md` (or a folder if it's multi-page)
+2. Add it under the `Writing:` section in `nav:` in `mkdocs.yml`, nested under `Essays:` or `Standards:` depending on the shape
 
 ### Images
 

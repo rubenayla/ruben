@@ -40,11 +40,12 @@ nav:
   - Partle: projects/partle.md
   - Cyberwheel: projects/cyberwheel.md
   - Investment Analysis: projects/invest.md
-  - Thoughts:
-      - Overview: thoughts/index.md
-      - US Healthcare Costs:
-          - Essay: thoughts/healthcare/index.md
-          - Main Analysis Tree: thoughts/healthcare/main-tree.md
+  - Writing:
+      - Overview: writing/index.md
+      - Essays:
+          - US Healthcare Costs:
+              - Essay: writing/healthcare/index.md
+              - Main Analysis Tree: writing/healthcare/main-tree.md
   - About: about.md
 
 markdown_extensions:
