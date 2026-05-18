@@ -46,6 +46,7 @@ nav:
           - US Healthcare Costs:
               - Essay: writing/healthcare/index.md
               - Main Analysis Tree: writing/healthcare/main-tree.md
+      - Standards: writing/standards.md
   - About: about.md
 
 markdown_extensions:
