@@ -7,7 +7,7 @@ There's also an anti-standards section at the bottom: things that just don't mak
 Some of these I wish were universal (they're just better). Others are personal preference.
 
 ## Units
-- Reference: [Neufert](https://en.wikipedia.org/wiki/Ernst_Neufert)
+- Reference: [Neufert — *Architects' Data*](https://en.wikipedia.org/wiki/Architects%27_Data)
 - 7 fundamental units: m, kg, s, K, A, mol, cd.
 - Billion = 10^9. Trillion (=Tera) = 10^12.
 - Also ºC, Nit (cd/m2), lm, and lx (lm/m^2, illumination of surface instead of an angle).
