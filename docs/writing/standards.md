@@ -454,10 +454,20 @@ void set_gear(f64 engine_rpm){
     - ``ORF``: Orbital Reference Frame
 - mmgs
 - Wheel forwards to zoom in (Me moving, not the object)
-- 3rd angle projection (american).
-    - The same concept. At the right I see what appears when I move to the right, the right side, seen from the right. It's clearly more intuitive, even after getting used to the european 1st angle projection standard.
-- Rotate about scene floor: 2 screen dimensions for 2 rotation dimensions. Humans do not usually roll their faces, so it's not intuitive or necessary.
-- Keep Z axis up: The screen is vertical. I start building in the flat X-Y floor, and then add the third Z dimension. That's compliant with physics standards, and body system S_b.
+- 3rd angle projection (American).
+
+    ??? note "Why 3rd-angle over 1st-angle"
+        Same intuition as turning your head. The view at the right of the drawing is what you'd see if you walked around to the right of the part — the right side, seen from the right. Clearly more intuitive than 1st-angle (European), even after years of getting used to the European standard.
+
+- Rotate about scene floor.
+
+    ??? note "Why rotate about floor"
+        2 screen dimensions map to 2 rotation dimensions. Humans don't usually roll their faces, so a third rotation axis isn't intuitive or necessary.
+
+- Keep Z axis up.
+
+    ??? note "Why Z-up"
+        The screen is vertical. I start building on the flat X-Y floor, then add the third Z dimension. That's compliant with physics standards and the body system $S_b$.
 - Front: Num 5, Left: Num4, Right: Num6, Top:Num8, Bottom: Num2, Back: Num0, Normal to: Num1, Isometric: Num3, Perspective: Num7, Num9 free for now.
 - Space: Repeat last command
 
