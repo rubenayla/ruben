@@ -265,8 +265,8 @@ Since decimal base is common, add 5mm, 10mm, 50mm, 100mm, etc.
     - Width: 60mm
 
 
-## Writing
-- Use [GiHub Flavored Markdown (GFM)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) when possible
+## Text
+- Use [GitHub Flavored Markdown (GFM)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) when possible
 - Fonts
     - Fast to read: Inter, PTSans, Open Sans, Atkinson Hyperlegible
     - Monospace: JetBrains Mono, Roboto Slab, consolas
@@ -341,11 +341,16 @@ I would like highlighter symbol different than grouping symbol
 | Ctrl + K, Ctrl + B | Toggle breakpoint                     |
 
 ## Programming
-- https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60#formatting-rules
-- https://users.ece.cmu.edu/~eno/coding/CCodingStandard.html
+References:
+
+- [luismts — formatting rules gist](https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60#formatting-rules)
+- [CMU C Coding Standard](https://users.ece.cmu.edu/~eno/coding/CCodingStandard.html)
+
+Rules:
+
 - Use English.
 - All files start with a comment stating their path relative to the project root, unless clearly irrelevant.
-- C: OTBS indentation style ( One True Brace Style, https://en.wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS) ), with cuddled else, and mandatory braces, or be on a single line. Alone brackets are always ending, and long lines start the block, easy to read and shorter than K&R. (Opening and closing brackets can be hard to tell apart. They're very similar symbols). Consider Ratliff style, or Banner style: ending bracket lines up with the indentation of the nested block. Easier to read since the headers of any block are the only thing extended at that level. The closing control of the prior block interferes with the visual flow of the next block header.
+- C: OTBS indentation style ([One True Brace Style](https://en.wikipedia.org/wiki/Indentation_style#Variant:_1TBS_%28OTBS%29)), with cuddled else, and mandatory braces, or be on a single line. Alone brackets are always ending, and long lines start the block, easy to read and shorter than K&R. (Opening and closing brackets can be hard to tell apart. They're very similar symbols). Consider Ratliff style, or Banner style: ending bracket lines up with the indentation of the nested block. Easier to read since the headers of any block are the only thing extended at that level. The closing control of the prior block interferes with the visual flow of the next block header.
 - Function and variable names: lowercase, with words separated by underscores. No need to make them different since the parenthesis makes a function obviously different from a variable.
 - Constants: Macros (#define) in uppercase and underscores. That's like the standard library.
 - Include the scope (if global), type, and units (if it has) in the variable name: g_s32_target_position_perc; // Global, signed 32bits, target position, percentage
@@ -371,6 +376,9 @@ I would like highlighter symbol different than grouping symbol
     - Qualitative
         - Tab10: They look good together and have good contrast with white background and with each other.
         - Tableau
+
+Example of the C style above:
+
 ```C
 #if DEBUGGING
     // Global variables to track time taken
