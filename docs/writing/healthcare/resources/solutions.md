@@ -26,7 +26,7 @@ Government becomes sole insurance provider. Hospitals and doctors remain private
 ### How it breaks the Nash equilibrium:
 - ✅ Government has monopsony power (can dictate prices)
 - ✅ Eliminates [contracting leverage](../facts/1.1.4-contracting-leverage.md)
-- ✅ Eliminates [perverse insurer incentives](../facts/1.2-insurer-incentives.md)
+- ✅ Eliminates perverse insurer incentives
 - ✅ Massively reduces administrative costs
 - ✅ Enables drug price negotiation
 
@@ -161,9 +161,9 @@ Fix market failures by enforcing true transparency and removing barriers to comp
 
 ### How it breaks Nash equilibrium:
 - ✅ Creates real price competition where possible
-- ✅ Eliminates [price opacity](../facts/1.7-price-opacity.md)
-- ✅ Reduces [entry barriers](../facts/1.3-entry-barriers.md)
-- ✅ Fixes [insurer incentives](../facts/1.2-insurer-incentives.md)
+- ✅ Eliminates price opacity
+- ✅ Reduces entry barriers
+- ✅ Fixes insurer incentives
 - ⚠️ **Does not solve geographic captivity in emergencies**
 
 ### Expected cost reduction: **15-30%** (mainly in elective procedures)
@@ -371,16 +371,16 @@ Combine elements from multiple solutions to maximize political viability and eff
 ## What Won't Work
 
 ### ❌ "Let the free market work"
-**Problem:** Healthcare is not a normal market (see [geographic captivity](../facts/1.1.1-geographic-captivity.md), [monopoly power](../facts/1.1-hospital-monopoly.md))
+**Problem:** Healthcare is not a normal market (see [geographic captivity](../facts/1.1.1-geographic-captivity.md), monopoly power)
 
 ### ❌ "Just lower prices by regulation without other changes"
 **Problem:** Hospitals/doctors have real high costs (labor, EMTALA, malpractice). Price caps without addressing root causes → shortages.
 
 ### ❌ "Encourage competition without fixing entry barriers"
-**Problem:** [Entry barriers](../facts/1.3-entry-barriers.md) prevent competition. Need to address root causes.
+**Problem:** Entry barriers prevent competition. Need to address root causes.
 
 ### ❌ "Hope insurers will negotiate better"
-**Problem:** [Insurer incentives](../facts/1.2-insurer-incentives.md) are broken. They profit from high costs.
+**Problem:** Insurer incentives are broken. They profit from high costs.
 
 ### ❌ "Just import drugs without broader reform"
 **Problem:** Drugs are ~10% of total spending. Helps but doesn't solve system.
