@@ -350,11 +350,17 @@ Rules:
 
 - Use English.
 - All files start with a comment stating their path relative to the project root, unless clearly irrelevant.
-- C: OTBS indentation style ([One True Brace Style](https://en.wikipedia.org/wiki/Indentation_style#Variant:_1TBS_%28OTBS%29)), with cuddled else, and mandatory braces, or be on a single line. Alone brackets are always ending, and long lines start the block, easy to read and shorter than K&R. (Opening and closing brackets can be hard to tell apart. They're very similar symbols). Consider Ratliff style, or Banner style: ending bracket lines up with the indentation of the nested block. Easier to read since the headers of any block are the only thing extended at that level. The closing control of the prior block interferes with the visual flow of the next block header.
+- C: [OTBS](https://en.wikipedia.org/wiki/Indentation_style#Variant:_1TBS_%28OTBS%29) (One True Brace Style), with cuddled else, mandatory braces, or single line.
+
+    ??? note "Why OTBS — and a note on Ratliff/Banner"
+        Alone brackets are always ending, and long lines start the block: easy to read and shorter than K&R. (Opening and closing brackets can be hard to tell apart — they're very similar symbols.) Worth also considering Ratliff style, or Banner style, where the ending bracket lines up with the indentation of the nested block. Easier to read since the headers of any block are the only thing extended at that level. The closing control of the prior block interferes with the visual flow of the next block header.
 - Function and variable names: lowercase, with words separated by underscores. No need to make them different since the parenthesis makes a function obviously different from a variable.
 - Constants: Macros (#define) in uppercase and underscores. That's like the standard library.
 - Include the scope (if global), type, and units (if it has) in the variable name: g_s32_target_position_perc; // Global, signed 32bits, target position, percentage
-- Use 4 spaces for indentation (Python), or Tabs. Don't mix them. Tabs are made for indentation, but having several invisible characters is kind of a mess. That depends on the font and editor though. Tabs are easier for navigation, lighter in file storage, separate looks from code functionality, and faster to write.
+- Use 4 spaces for indentation (Python), or Tabs. Don't mix them.
+
+    ??? note "Tabs vs spaces"
+        Tabs are made for indentation, but having several invisible characters is kind of a mess. That depends on the font and editor though. Tabs are easier for navigation, lighter in file storage, separate looks from code functionality, and faster to write.
 
 - Function name followed by "(" without spaces. Keywords like if, while, for... with a space between the name and the "(", to distinguish.
 - Justify why a variable is global with a comment in the declaration, and describe it if necessary
@@ -366,9 +372,12 @@ Rules:
 - `.csv`: RFC 4180
 - Colormaps
     - Sequential
-        - Magma (or Inferno) - Default I'll use
-            - Looks very natural, non-distracting, perceptually uniform, and colorblind-friendly. Inferno looks too yellow, but is better for details at all scales. By natural and non-distracting, I mean that makes me focus on the bright spots right away, I don't have to think about the colors.
-        - Viridis - Very common and good too. It doesn't use white nor black at the extremes, so it wont get confused with the background, for example in geographical maps with missing data.
+        - **Magma** (or Inferno) — default.
+
+            ??? note "Why Magma"
+                Looks very natural, non-distracting, perceptually uniform, and colorblind-friendly. Inferno looks too yellow, but is better for details at all scales. By "natural and non-distracting" I mean it makes me focus on the bright spots right away — I don't have to think about the colours.
+
+        - **Viridis** — very common and good too. Doesn't use white or black at the extremes, so it won't get confused with the background (e.g. geographical maps with missing data).
     - Diverging
         - RdBu (red-blue): Very natural, white in the middle. Can assign 0 to white and the extremes to the colors.
         - Coolwarm has a strange gray by default and too saturated colors, looks odd compared to the others. However, it could be useful to distinguish missing data.
@@ -506,20 +515,51 @@ A button can communicate two things: what **is** (state) or what **will happen**
     - size = total number of elements (product of axis lengths)
 
 ## Anti-Standards, do not use
-- G3/8", NPT. Just use G1/2"
-- Displayport (HDMI is the standard, just go to USB-C. The adapters to DP are super expensive). Just use USB-C
-- Micro-USB, Mini-USB. Just use USB-C
-- Banana plugs: Not reliable design, multiple contacts in series with the rotating connector
-- XLR not for power. They aren't supposed to carry high voltages.
-- Deans. Replaced by XT60 or even better XT90S (easier to connect by hand)
-- Screw terminals. Replaced by Wago-style connectors (Easier to use, resistant to vibration, compatible with stranded and solid wire)
-- Molex Nano Fit (UVigo Team not recommend at all)
-- Jet colormap: It's not perceptually uniform, and it's not colorblind-friendly. Replace with Magma, Viridis, or Inferno.
-- JST-PH (2mm pitch)
-    - Has fame of being unreliable. My EUC was hard to tune, I found the problem was bad contact of PH connector, not the PID. Some people consider it fragile, hard to connect etc.
-    - Just use the JST-XH, which is more common and way more durable.
-    - Smaller than XH, but less current (2A). Available in more pin counts.
-- 12Hr format for hours. It doesn't make sense that the hour after 12:00 PM is 1:00 PM. Guys, the 0 exists. I mean: 11:00 AM  -> 12:00 PM -> 1:00 PM, makes no fucking sense. At least the switch from AM to PM should go when we switch from 12 back to 1, so PM would be equivalent to "+12Hr" but it doesn't even line up with that. Use 24Hr format instead.
-- camelCase and PascalCase: They break when introducing acronyms. Sometimes they're left uppercase, but sometimes they're transformed to normal words starting with uppercase letter and the rest lowercase. It's inconsistent and error prone. Just use snake_case.
-    - As an example, yahoofinance has: trailingPE and enterpriseToEbitda as names. PE and Ebitda are both acronyms.
-- "open valve" / "closed valve" / "normally open" / "normally closed". The word "open" flips meaning between fluids and electricity. Use "let" / "cut" instead (see Switches).
+- **G3/8", NPT** — use G1/2".
+- **DisplayPort** — use USB-C.
+
+    ??? note "Why not"
+        HDMI is the more common alternative, but USB-C now subsumes both. DP adapters to other formats are super expensive.
+
+- **Micro-USB, Mini-USB** — use USB-C.
+- **Banana plugs**.
+
+    ??? note "Why not"
+        Not reliable: multiple contacts in series with the rotating connector.
+
+- **XLR for power** — XLR isn't supposed to carry high voltages.
+- **Deans** — use XT60, or better XT90S.
+
+    ??? note "Why not"
+        XT90S is easier to connect by hand than Deans.
+
+- **Screw terminals** — use Wago-style connectors.
+
+    ??? note "Why not"
+        Wago is easier to use, vibration-resistant, and compatible with both stranded and solid wire.
+
+- **Molex Nano Fit** (UVigo Team does not recommend at all).
+- **Jet colormap** — use Magma, Viridis, or Inferno.
+
+    ??? note "Why not"
+        Not perceptually uniform and not colorblind-friendly.
+
+- **JST-PH (2mm pitch)** — use JST-XH instead.
+
+    ??? note "Why not"
+        Has a reputation for being unreliable. My EUC was hard to tune; I found the problem was bad contact of the PH connector, not the PID. Some people consider it fragile and hard to connect. JST-XH is more common and way more durable. PH is smaller than XH but carries less current (2A) — its only real advantage is being available in more pin counts.
+
+- **12-hour format for time** — use 24-hour.
+
+    ??? note "Why not"
+        It doesn't make sense that the hour after 12:00 PM is 1:00 PM. The 0 exists. 11:00 AM → 12:00 PM → 1:00 PM makes no fucking sense. At least the switch from AM to PM should happen when we go from 12 back to 1, so PM would be equivalent to "+12 hr" — but it doesn't even line up with that.
+
+- **camelCase / PascalCase** — use snake_case.
+
+    ??? note "Why not"
+        They break when you introduce acronyms. Sometimes acronyms are left uppercase, sometimes they're transformed to normal words with only the first letter capitalised. Inconsistent and error-prone. Example: yahoofinance has `trailingPE` and `enterpriseToEbitda` as names — `PE` and `Ebitda` are both acronyms, treated inconsistently.
+
+- **"open valve" / "closed valve" / "normally open" / "normally closed"** — use "let" / "cut" instead (see [Switches and valves](#switches-and-valves)).
+
+    ??? note "Why not"
+        The word "open" flips meaning between fluids and electricity. An open switch blocks current; an open valve lets fluid through. "Let" / "cut" is unambiguous in both domains.
