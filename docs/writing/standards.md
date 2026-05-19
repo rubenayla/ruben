@@ -271,11 +271,16 @@ Since decimal base is common, add 5mm, 10mm, 50mm, 100mm, etc.
     - Fast to read: Inter, PTSans, Open Sans, Atkinson Hyperlegible
     - Monospace: JetBrains Mono, Roboto Slab, consolas
         <!-- - menlo? -->
-- USA QWERTY keyboard. Dvorak is cool, maybe qgmlwb, but the difference is not so big and it's easier to write gliding with qwerty, and the shortcuts of most applications are thought with a QWERTY layout in mind. I would prefer some expanded version with common greek letters (AltGr + A = Alpha, AltGr + B = Beta ...), and just remove the number row and use a numpad.
+- USA QWERTY keyboard.
+
+    ??? note "Why QWERTY"
+        Dvorak is cool, maybe qgmlwb, but the difference isn't big and it's easier to glide-type on QWERTY. Most application shortcuts are designed around the QWERTY layout. I would prefer an expanded version with common Greek letters (AltGr + A = α, AltGr + B = β …), and dropping the number row in favour of a numpad.
 
 Scientific paper format: APA rules.
 
-I would like highlighter symbol different than grouping symbol
+### Grouping symbols
+Each symbol means one specific thing. I'd also like a separate symbol for *highlighting* (currently overloaded into these), but no clean candidate yet.
+
 - `()`: Comment, clarification, contextual information. Not to replace, just info:
     - `(this is a comment) (this was happening...)`
 - `[]`: Group stuff as a single item:
