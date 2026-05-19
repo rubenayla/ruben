@@ -3,11 +3,7 @@ window.MathJax = {
     inlineMath: [["\\(", "\\)"]],
     displayMath: [["\\[", "\\]"]],
     processEscapes: true,
-    processEnvironments: true,
-    macros: {
-      dm: "\\,\\mathrm{d}m",
-      dA: "\\,\\mathrm{d}A"
-    }
+    processEnvironments: true
   },
   options: {
     ignoreHtmlClass: ".*|",

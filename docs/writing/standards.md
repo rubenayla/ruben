@@ -480,14 +480,14 @@ A button can communicate two things: what **is** (state) or what **will happen**
     - magnet polarity: North-down, so the magnet would match the Earth's magnetic field at the North Pole.
     - Height: = to the grid size, so 42mm = 6*7mm or 6U (6 units of 7mm, including the base)
 - Ways to talk about moments of inertia:
-    1. First, second, third... depending on the order of the distance that gets integrated. So $\int r \dm$ is the first moment, $\int r^2 \dm$ is the second moment.
+    1. First, second, third... depending on the order of the distance that gets integrated. So $\int r \, dm$ is the first moment, $\int r^2 \, dm$ is the second moment.
     2. Then say of mass or of area, depending on the other part of the integral.
     - Examples:
-        - $\int r dm = Q = M_r$ is the first moment of mass = center of mass
-        - $\int r^2 dm = I$ is the second moment of mass = moment of inertia
+        - $\int r \, dm = Q = M_r$ is the first moment of mass = center of mass
+        - $\int r^2 \, dm = I$ is the second moment of mass = moment of inertia
             - The one that links torque and angular acceleration. Multiplied by angular velocity gives angular momentum.
-        - $\int y^2 dA = I_x$ is the second moment of area about an axis = area moment of inertia. That's why it has y instead of r. It'd be the bending stiffness of a beam with y as the distance to the neutral axis. After integrating, it's b*h^3/12 for a rectangular section, so making it twice the thickness makes it 8 times stiffer.
-        - $\int r^2 dA = J$ is the second moment of area about a point = polar moment of inertia
+        - $\int y^2 \, dA = I_x$ is the second moment of area about an axis = area moment of inertia. That's why it has y instead of r. It'd be the bending stiffness of a beam with y as the distance to the neutral axis. After integrating, it's b*h^3/12 for a rectangular section, so making it twice the thickness makes it 8 times stiffer.
+        - $\int r^2 \, dA = J$ is the second moment of area about a point = polar moment of inertia
             - This is the one for torsion
 - Git:
     - Many commits, but just of completed work, not half-done stuff (consider stash, for saving changes without committing)
