@@ -7,7 +7,7 @@ There's also an anti-standards section at the bottom: things that just don't mak
 Some of these I wish were universal (they're just better). Others are personal preference.
 
 ## Units
-- Reference: Neufert
+- Reference: [Neufert](https://en.wikipedia.org/wiki/Ernst_Neufert)
 - 7 fundamental units: m, kg, s, K, A, mol, cd.
 - Billion = 10^9. Trillion (=Tera) = 10^12.
 - Also ºC, Nit (cd/m2), lm, and lx (lm/m^2, illumination of surface instead of an angle).
@@ -15,6 +15,7 @@ Some of these I wish were universal (they're just better). Others are personal p
 
 ## Pneumatics
 Air coupler (sorted by priority):
+
 1. **`EU` - Euro High-Flow Interchange, PCL XF**, 1/4" flow, 10x7mm tip, 11.8mm protuberance, 21mm total depth (often 1/4" BSP thread profile)
 2. Industrial, red, Milton M-style, Type D, 1/4" flow, 8mm OD tip, 10.85mm protuberance, 24mm total depth
 3. Milton V-style high flow, S-765
