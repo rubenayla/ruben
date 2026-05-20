@@ -94,7 +94,6 @@ Soldering Iron Tips: T12 style (heater built into the tip)
     - RYGCBM: 6Lines
     - brown, green, bare copper, brown/green stripes: Earth ground. (Like grass or soil, or something that doesn't need insulation)
 - Chassis ground: Grey (Color similar to steel and dirty stuff), or Earth ground colors if always earthed.
-- Hall sensors (1,2,3): Yellow, Green, Blue
 - For lab tools: use the one of resistors, for numbers like 17 just paint the 7, the 10 is obvious, and for 4.5 you can stripe 4 and 5 colors. If you adjust the position of color 5 you could represent anything in between like an analog system to write decimals
 
 ### Electric connectors
@@ -394,19 +393,16 @@ Rules:
 Example of the C style above:
 
 ```C
-#if DEBUGGING
-    // Global variables to track time taken
-    u32 initial_time_us = 0;
-    u32 final_time_us = 0;
-#endif
+// Function name + ( with no space. Keywords like `if`, `while`, `for` keep a space.
+void set_gear(f64 engine_rpm) {
+    /* Pick the gear for the given engine speed. */
 
-void set_gear(f64 engine_rpm){
-    /* Task that sets the right gear according to the engine rotation speed
-    */
-
-    while (1) {
-        OS_SEMAPHORE_TakeBlocked(&SemaISR); // Wait for signaling of received data
-        ...
+    if (engine_rpm < 1500) {
+        target_gear = 1;
+    } else if (engine_rpm < 3000) {
+        target_gear = 2;
+    } else {
+        target_gear = 3;
     }
 }
 ```
