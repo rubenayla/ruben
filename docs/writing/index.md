@@ -9,7 +9,7 @@ Two flavours, listed separately as the collection grows:
 
 ## Essays
 
-### [Why is US Healthcare So Expensive?](healthcare/)
+### [Why is US Healthcare So Expensive?](healthcare/index.md)
 
 A first-principles analysis of why US healthcare costs 2–3× what comparable countries pay. Walks through the thought experiment of opening a cheaper hospital and discovering, one by one, the regulatory and contractual structures that block it. Five direct barriers, two secondary factors, and what a working reform package would change.
 

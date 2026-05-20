@@ -13,8 +13,8 @@ If competition normally reduces prices, **why doesn't it work in US healthcare?*
 ## Structure
 
 - **[Main Analysis Tree](main-tree.md)** - Hierarchical breakdown of causes and consequences
-- **[facts/](facts/)** - Detailed explanations of individual factors
-- **[resources/](resources/)** - Supporting data, examples, and potential solutions
+- **Facts** - Detailed explanations of individual factors
+- **Resources** - Supporting data, examples, and potential solutions
 
 ## Quick Summary
 

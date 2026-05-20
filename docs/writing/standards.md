@@ -213,8 +213,10 @@ Length calculated with Pitch and Pin Qty, width is lead span, height given.
 - A current standard: M0.6, M1, M1.6, M2.5 T8, M4 T20 E5, M6 T30 E8, M8, M10 T50 E12, M16, M24, M40
 - TORX (hexalobular, 6lobe) internal Screw head (Flush) with ISO metric screw threads.
 - I would also consider Robertson and torx plus, but forget about flat, philips, or pozidriv.
-- If this standard changed, introduce metric (dozenal multiples?) screw heads. Don't reduce the section until the very end, and then try to accomplish the robertson grabbing feature, but only for bits that intend to grab the screw, like ttap, because that grabbing feature can be detrimental in mass production. Maybe add attachments to the bits that make them grab. Tubular torx screw with internal AND external torx profile.
 - Torx nuts (that can also be screwed with hex key and viceversa) with the same torx external head as the screw's one.
+
+    ??? note "If the standard were redesigned"
+        Introduce metric (dozenal multiples?) screw heads. Don't reduce the section until the very end, and then try to accomplish the Robertson grabbing feature, but only for bits that intend to grab the screw, like ttap, because that grabbing feature can be detrimental in mass production. Maybe add attachments to the bits that make them grab. Tubular torx screw with internal AND external torx profile.
 
 
 ## Sizes
@@ -507,9 +509,10 @@ A button can communicate two things: what **is** (state) or what **will happen**
 - FLRY cable for automotive, recommended by reprorace
 - Manage csv-like info with little reserved characters
     - Use uncommon combo as special entity, like -- (-- is +, would never be used in math. It would in text though), then whenever you actually want to write --, just escape it: double the combo '----' is "'--''--'" -> '--'. If you want to write '---' then that's '----' and '-' so '-----', for '----' it would be '--------' and so on. This just takes twice the characters to write the reserved one, fixing the problem. You can always write twice of whatever you want to write.
-- Quaternion convention: Hamilton. Not JPL
-    - JPL uses the terms [q1 q2 q3 q0], while Hamilton uses [q0 q1 q2 q3], [w x y z]. You can see which makes more sense.
-    - If you have a value that's different from all the others (the scalar part), it makes sense to put it first, with the single non-positive index: 0. Also, when writing a 4-dimensional complex number, you'd always put the real part first, then all the imaginary parts. It's just more natural.
+- Quaternion convention: Hamilton. Not JPL.
+
+    ??? note "Why Hamilton over JPL"
+        JPL uses the terms [q1 q2 q3 q0], while Hamilton uses [q0 q1 q2 q3], [w x y z]. If you have a value that's different from all the others (the scalar part), it makes sense to put it first, with the single non-positive index: 0. Also, when writing a 4-dimensional complex number, you'd always put the real part first, then all the imaginary parts. It's just more natural.
 - Video Format
     - DNxHR codec, .mov extension. Digital Nonlinear Extensible High Resolution. Avid family.
     - .tiff
