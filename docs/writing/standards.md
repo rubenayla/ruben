@@ -194,7 +194,16 @@ Soldering Iron Tips: T12 style (heater built into the tip)
 - Weatherproof
 </details>
 
-<!-- - ?For single-pin connector with exposed male (e.g. arduino, dupont), the male goes at the pcb, fixed part, and the female goes at the cable, since it's what easily moves and can cause shorts. -->
+- **DuPont / Arduino-style (2.54mm) gender rule**: boards/devices carry **male** headers; cables are **female-to-female** (a female socket on *both* ends). So every cable is the same kind, and every board exposes pins. If a device comes with female headers, swap them for male — easier than building custom cables. For a rare male-ended connection, just use solid-core wire (~22 AWG).
+
+    ??? note "Why males on boards, females on cables"
+        A loose cable can fling around; an exposed male pin on it could touch something and short. A recessed female socket can't. So keep the females on the moving part (the cable) and the males fixed on the board.
+
+        Standardising on one cable type (female-to-female) means every cable is interchangeable. The breadboard plays the same role as a bundle of female-to-female cables — both present female sockets to the boards' male pins.
+
+        Given a connection to fix, you either modify the board or build a custom cable. Re-soldering a header to males is far less effort than crimping a custom cable, so modify the board to keep everything standard.
+
+        From David Malawey: ["You can get rid of half of all these..."](https://youtube.com/shorts/VOrIf3qfez0) — he desolders female headers, replaces them with male, and uses only female-to-female cables (solid-core wire when a male end is genuinely needed).
 
 ### IC packages
 **Nomenclature**: Package name + Pitch + 'P' + Lead Span X Height – Pin Qty.
