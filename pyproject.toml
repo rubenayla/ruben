@@ -1,7 +1,7 @@
 [project]
-name = "portfolio"
+name = "ruben"
 version = "0.1.0"
-description = "Personal portfolio site built with MkDocs Material"
+description = "Personal site of Rubén Jiménez Mejías — portfolio, writing, standards, references, and CV"
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [

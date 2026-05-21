@@ -1,8 +1,8 @@
-# Portfolio
+# ruben — personal site
 
 **Live site: <https://rubenayla.xyz/>**
 
-Personal site built with MkDocs Material. Serves three things:
+Personal site / hub built with MkDocs Material — portfolio, writing, standards, references, ideas, and CV, all in one place. Three main sections:
 
 1. **Homepage (`docs/index.md`)** — CV-style landing: who I am, what I work on, and direct links to LinkedIn, GitHub, and the resume PDFs (EN + ES). This is what someone lands on from a job application or LinkedIn click — it should answer "who is this person, and where do I find their CV?" in one screen.
 2. **Project tabs** — one tab per substantial project (driverless kart, Partle, Cyberwheel, investment analysis, …). Each is a self-contained write-up under `docs/projects/` or its own folder (e.g. `docs/build-journey/`).
@@ -13,8 +13,8 @@ Top-level nav tabs are defined in `mkdocs.yml` under `nav:`.
 ## Local Development
 
 ```bash
-git clone https://github.com/rubenayla/portfolio.git
-cd portfolio
+git clone https://github.com/rubenayla/ruben.git
+cd ruben
 uv sync
 uv run mkdocs serve
 ```
@@ -34,7 +34,7 @@ Auto-deploys to GitHub Pages via GitHub Actions on push to `main`. The custom do
 ## Structure
 
 ```
-portfolio/
+ruben/
 ├─ docs/
 │  ├─ index.md               # CV-style homepage (LinkedIn, GitHub, CV PDFs, project grid)
 │  ├─ about.md               # Longer-form about page

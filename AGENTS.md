@@ -1,11 +1,11 @@
 <!-- read in full — kept under 150 lines -->
-# Portfolio — Agent Guide
+# ruben — Agent Guide
 
-Personal portfolio site for Rubén Jiménez Mejías. Static site built with MkDocs Material, hosted on GitHub Pages.
+Personal site / hub for Rubén Jiménez Mejías — portfolio, writing, standards, references, ideas, and CV. Static site built with MkDocs Material, hosted on GitHub Pages.
 
 ## Quick Reference
 - Live: https://rubenayla.xyz/ (moving from rubenayla.github.io/portfolio/)
-- Repo: https://github.com/rubenayla/portfolio
+- Repo: https://github.com/rubenayla/ruben
 - Stack: MkDocs Material (Python), deployed via GitHub Pages
 - Domain: rubenayla.xyz (Cloudflare DNS)
 
