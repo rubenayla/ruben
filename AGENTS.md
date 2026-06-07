@@ -3,7 +3,7 @@
 
 Recruiter-facing portfolio for Rubén Jiménez Mejías — engineering projects, writing (essays), and CV. Static site built with MkDocs Material, hosted on GitHub Pages.
 
-Personal notes / opinionated standards live in a **separate** site: repo `rubenayla/ruben` → https://notes.rubenayla.xyz/. The split is intentional and **one-directional**: the notes site may link here, but this portfolio must never link out to the notes site (keeps the hiring-facing surface clean). Anything personal/scratch/standards belongs in `ruben`, not here.
+Personal notes / opinionated standards live in a **separate** site: repo `rubenayla/notes` → https://notes.rubenayla.xyz/. The split is intentional and **one-directional**: the notes site may link here, but this portfolio must never link out to the notes site (keeps the hiring-facing surface clean). Anything personal/scratch/standards belongs in `notes`, not here.
 
 ## Quick Reference
 - Live: https://rubenayla.xyz/
