@@ -140,6 +140,10 @@ Soldering Iron Tips: T12 style (heater built into the tip)
     - Molex MX150
     - Tessa tape to protect.
 - Anderson (SB50): Weatherproof High current (and V) genderless connector
+- **4mm banana**: Bench power supplies, test leads, DC distribution with frequent connect/disconnect.
+    - Quality plugs (Staubli/Hirschmann/Pomona) carry 20–32A. Use shrouded "safety" type above ~30V.
+    - No positive lock — for vibration / mobile / permanent high-current use XT90S instead.
+    - Cheap spring-wire banana plugs are the unreliable ones: low contact force, several loose series joints, drifting resistance.
 - Signals:
     - **JST-XH** 2.54mm pitch
         - Friction lock, easy to remove, small, cheap, high current (3A)
@@ -545,11 +549,6 @@ A button can communicate two things: what **is** (state) or what **will happen**
         HDMI is the more common alternative, but USB-C now subsumes both. DP adapters to other formats are super expensive.
 
 - **Micro-USB, Mini-USB** — use USB-C.
-- **Banana plugs**.
-
-    ??? note "Why not"
-        Not reliable: multiple contacts in series with the rotating connector.
-
 - **XLR for power** — XLR isn't supposed to carry high voltages.
 - **Deans** — use XT60, or better XT90S.
 
