@@ -1,5 +1,5 @@
 site_name: Rubén Jiménez Mejías
-site_description: Personal site of Rubén Jiménez Mejías — projects, writing, standards, references, and CV
+site_description: Portfolio of Rubén Jiménez Mejías — engineering projects, writing, and CV
 site_author: Rubén Jiménez Mejías
 site_url: https://rubenayla.xyz/
 
@@ -46,7 +46,6 @@ nav:
           - US Healthcare Costs:
               - Essay: writing/healthcare/index.md
               - Main Analysis Tree: writing/healthcare/main-tree.md
-      - Standards: writing/standards.md
   - About: about.md
 
 markdown_extensions:

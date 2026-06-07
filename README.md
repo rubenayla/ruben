@@ -1,20 +1,20 @@
-# ruben — personal site
+# portfolio — Rubén Jiménez Mejías
 
 **Live site: <https://rubenayla.xyz/>**
 
-Personal site / hub built with MkDocs Material — portfolio, writing, standards, references, ideas, and CV, all in one place. Three main sections:
+Recruiter-facing portfolio built with MkDocs Material — engineering projects, writing, and CV. (Personal notes / opinionated standards live separately at <https://notes.rubenayla.xyz/>, repo `rubenayla/ruben`, and are intentionally not linked from here.) Three main sections:
 
 1. **Homepage (`docs/index.md`)** — CV-style landing: who I am, what I work on, and direct links to LinkedIn, GitHub, and the resume PDFs (EN + ES). This is what someone lands on from a job application or LinkedIn click — it should answer "who is this person, and where do I find their CV?" in one screen.
 2. **Project tabs** — one tab per substantial project (driverless kart, Partle, Cyberwheel, investment analysis, …). Each is a self-contained write-up under `docs/projects/` or its own folder (e.g. `docs/build-journey/`).
-3. **Writing tab** — essays and (eventually) standards / opinionated conventions. Lives under `docs/writing/`. Same status as a project tab: a section of the site, not a sub-page of something else. Subdivides into `essays/` and `standards/` as it grows.
+3. **Writing tab** — essays. Lives under `docs/writing/`. Same status as a project tab: a section of the site, not a sub-page of something else.
 
 Top-level nav tabs are defined in `mkdocs.yml` under `nav:`.
 
 ## Local Development
 
 ```bash
-git clone https://github.com/rubenayla/ruben.git
-cd ruben
+git clone https://github.com/rubenayla/portfolio.git
+cd portfolio
 uv sync
 uv run mkdocs serve
 ```
@@ -34,7 +34,7 @@ Auto-deploys to GitHub Pages via GitHub Actions on push to `main`. The custom do
 ## Structure
 
 ```
-ruben/
+portfolio/
 ├─ docs/
 │  ├─ index.md               # CV-style homepage (LinkedIn, GitHub, CV PDFs, project grid)
 │  ├─ about.md               # Longer-form about page
@@ -43,7 +43,7 @@ ruben/
 │  ├─ videos/                # Project videos (hero clips, demos)
 │  ├─ projects/              # One markdown file per project tab
 │  ├─ build-journey/         # Multi-page project write-up (driverless kart)
-│  └─ writing/               # Essays + standards (healthcare, …)
+│  └─ writing/               # Essays (healthcare, …)
 ├─ mkdocs.yml                # Site config + nav (tabs)
 ├─ pyproject.toml
 └─ .github/workflows/        # GitHub Actions deploy
@@ -57,10 +57,10 @@ ruben/
 2. Add it under `nav:` in `mkdocs.yml`
 3. Optionally feature it on the homepage (`docs/index.md`)
 
-### A new essay or standard
+### A new essay
 
 1. Create `docs/writing/<topic>.md` (or a folder if it's multi-page)
-2. Add it under the `Writing:` section in `nav:` in `mkdocs.yml`, nested under `Essays:` or `Standards:` depending on the shape
+2. Add it under the `Writing:` section in `nav:` in `mkdocs.yml`, nested under `Essays:`
 
 ### Images
 

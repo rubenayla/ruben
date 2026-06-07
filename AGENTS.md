@@ -1,11 +1,13 @@
 <!-- read in full — kept under 150 lines -->
-# ruben — Agent Guide
+# portfolio — Agent Guide
 
-Personal site / hub for Rubén Jiménez Mejías — portfolio, writing, standards, references, ideas, and CV. Static site built with MkDocs Material, hosted on GitHub Pages.
+Recruiter-facing portfolio for Rubén Jiménez Mejías — engineering projects, writing (essays), and CV. Static site built with MkDocs Material, hosted on GitHub Pages.
+
+Personal notes / opinionated standards live in a **separate** site: repo `rubenayla/ruben` → https://notes.rubenayla.xyz/. The split is intentional and **one-directional**: the notes site may link here, but this portfolio must never link out to the notes site (keeps the hiring-facing surface clean). Anything personal/scratch/standards belongs in `ruben`, not here.
 
 ## Quick Reference
-- Live: https://rubenayla.xyz/ (moving from rubenayla.github.io/portfolio/)
-- Repo: https://github.com/rubenayla/ruben
+- Live: https://rubenayla.xyz/
+- Repo: https://github.com/rubenayla/portfolio (renamed from `ruben` 2026-06-07; was `portfolio` before a May 2026 rename to `ruben`, now reverted on the portfolio/notes split)
 - Stack: MkDocs Material (Python), deployed via GitHub Pages
 - Domain: rubenayla.xyz (Cloudflare DNS)
 
